@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt xml:lang="cn"> 
+            <title type="main">
+               市场距离、需求不确定性与离岸价格*
+               <note n="*" place="foot">
+                  本文得到湖南师范大学博士科研启动项目（项目编号：0531110）的资助。感谢厦门大学王璐航和匿名审稿人的宝贵意见。
+               </note>
+            </title>
+            <!-- author information in separate <author> elements per author -->
+            <author>
+               <name>
+                  <surname>首</surname>
+                  <forename>陈霄</forename>
+               </name>
+               <affiliation>
+                  <orgName>湖南师范大学商学院</orgName>
+                  <rs type="city">湖南长沙</rs>
+                  <rs type="postcode">410081</rs>
+               </affiliation>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>北京大学图书馆</publisher>
+            <date>2020-02-18</date>
+            <idno type="doi" xml:base="https://doi.org/">10.12088/PKU.jjkx.2020.01.02</idno>
+            <idno type="北大经济科学期刊" xml:base="http://ccj.pku.edu.cn/jjkx/CN/article/showTenYearOldVolumn.do">2020, Vol. 42(1): 21-32</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <p xml:base="http://www.oaj.pku.edu.cn/">北京大学期刊网</p>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc xml:lang="cn">
+         <abstract>
+            <p>摘要: 针对文献中发现的距离与出口价格之间的正相关关系,有别于其他文献从产品质量角度的解释,本文从需求不确定性角度进行了解释。使用2005年的中国出口交易数
+               据,本文发现,当加入距离和需求不确定性的交互项后,距离对离岸价格的正向作用完全被交互项所吸收,而距离本身的系数不再为正。因此,需求不确定性是距离影响离岸
+               价格的重要机制。通过检验中介效应的“三步法”,本文进一步发现作为存货成本间接量度的运输频次在需求不确定性和距离的交互项正向影响离岸价格过程中起到部分
+               中介效应的作用。因此,存货成本可以部分解释距离如何通过需求不确定性对单位价格产生正向影响。本文的研究表明,为了更好地解释现实情形,贸易模型有必要将需求
+               不确定性这一因素考虑进来。 </p>
+         </abstract>
+         <textClass>
+            <keywords>
+               <term>市场距离</term>
+               <term>需求不确定</term>
+               <term>离岸价格</term>
+               <term>运输频次</term>
+               <term>存货成本</term>
+            </keywords>
+            <classCode scheme="http://www.ztflh.com/">中图分类号：F740.3</classCode>
+            <classCode scheme="https://www.aeaweb.org/econlit/jelCodes.php">JEL分类号：L20	F10	F14</classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change><!-- Description of a change to the article; using @who and @when. --></change>
+      </revisionDesc>
+  </teiHeader>
+  <text>
+      <front>
+         <div type="引言" xml:id="introduction">
+            <head>一、引言及文献综述</head>
+            <p>许多实证研究的文献发现企业出口到更远的国家的产品单位离岸价格会更高（Bastos 和 Silva，2010；Manova 和 Zhang，2012；孙一平等，2017），就是说，出口得越
+               远，产品的单位价格会越高。①为了解释这种现象，现有文献主要着眼于出口目的地之间产品质量的异质性，比如 Hummels 和 Skiba（2004）认为单位运输成本下企业
+               会向更远的市场出口更高质量的产品，因为单位运输成本降低了高质量产品的相对价格从而增加了高质量产品的相对需求；Manova 和 Zhang（2012）则认为在线性需求
+               模型下，市场距离与市场竞争程度正相关，企业在竞争压力下会减少产品加成率，同时提高产品质量。②本文尝试从需求不确定性的角度解释企业为什么会对更远的目的
+               地定更高的离岸价格。使用中国的出口交易数据，本文发现，市场距离通过需求不确定性对企业的离岸价格有正面作用。也就是说， 当引入市场距离与需求不确定性的交
+               互项之后，市场距离自身的系数不再为正。市场距离对离岸价格的正向作用被交互项所完全吸收。市场距离只通过需求不确定性对离岸价格起正向作用。
+               <note n="①" place="foot">同一个产品的离岸价格随着距离的增加而增加的现象不仅发生在企业内部，也发生在企业之间
+                  （Bastos  和 Silva，2010；Baldwin 和 Harrigan，2011；Johnson，2012）。本文主要关注的是企业内部不同市场之间的价格变化。</note>
+               <note n="②" place="foot">Martin（2012）从产品溢价角度去解释，他们发现企业会对更远的出口目的地（从而更高的运输成本）设定更高的价格溢价。</note></p>
+            <p>需求不确定性可能通过企业的存货成本来影响企业的出口价格。首先，需求不确定性会影响企业的存货成本。Békés 等（2017）发现需求不确定性和市场规模负向影
+               响企业的运输频次，从而正向影响企业的存货成本。而依据首陈霄（2018）的发现，只有需求不确定性与市场距离的交互项可以影响企业的运输频次以及企业的存货成本。
+               其背后逻辑在于，企业通过增加存货水平来降低需求不确定性和运输时间导致的缺货风险。根据 Zipkin（2000）中的存货管理理论，较高的存货水平意味着较低的存货周
+               转率，也就是较低的运输频次。然后，存货成本会影响离岸价格。企业会根据缺货风险的大小调整存货策略。缺货风险越大，存货水平越高，单位产品库存时间就越长，
+               从而单位产品的库存成本也越高。较高的存货成本使得企业提高出口产品的离岸价格以补偿成本的上升。本文使用中介效应检验的“三步法”验证了需求不确定性的存货
+               成本机制。由于企业的存货成本不能直接观测到，本文依照首陈霄（2018）的做法，使用运输频次作为存货成本的代理变量。本文发现存货成本可以部分解释需求不确定
+               性对离岸价格的正向影响。企业提高离岸价格以弥补存货成本的上升。</p>
+            <p>需求不确定性还可能通过其他机制影响离岸价格，其中之一是投资机制，即需求不确定性可能通过影响企业的投资决策来影响出口产品的单位价格。由于企业投资的不可
+               逆 性，需求不确定性会减少企业的投资。相关的文献有 Bernanke（1983）、Pindyck（1988）、 Dixit 和 Pindyck（1994）等。导致离岸价格国别差异的主要因素是目
+               的地市场相关的投资， 比如营销网络、物流体系的建设。这些投资的减少会使得单位产品的销售和管理成本相对更高，相应地，对这些目的地出口的产品单价也更高。</p>
+            <p>本文的研究与探讨企业出口价格国家间异质性的文献直接相关。Hummels 和 Klenow（2005）、Hallak（2006）、Johnson（2012）、Baldwin 和 Harrigan（2011）等
+               文献都在产品水平上发现出口价格随着目的地的经济规模、收入水平、市场距离和市场遥远程度①的不同而不同。利用详细的中国海关贸易数据，Manova 和 Zhang
+               （2012）在企业—产品水平上证实企业对更富有、规模更大、双边距离更远以及总体而言更偏远的市场设置更高的出口价格。与之前的文献从质量方面考虑类似，他们也
+               认为这些现象是因为企业会随着目的地市场的特征调整产品的质量。国内文献中，孙一平等（2017）也用中国的数据证实了距离对离岸价格的正向影响，还发现距离对离
+               岸价格的影响程度与企业规模以及产品差异化程度密切相关。针对是什么因素导致了企业调整质量的行为，Verhoogen（2008）、Fajgelbaum等（2011）和 Simonovska
+               （2015）认为消费者遵循非位似性偏好，因而更富有国家的消费者有更低的收入边际效用和更高的产品质量需求。基于线性需求模型，Manova 和 Zhang（2012）认为目的
+               地规模、市场距离等市场特征与市场的竞争程度正相关。企业为了应对市场竞争会使用更高质量的投入品以生产更高质量的产品。Hummels 和 Skiba（2004）认为单位运
+               输成本较之冰山成本更符合现实，在单位运输成本下，企业会对更远的市场出口更高质量的产品。
+               <note n="①" place="foot">某国的市场遥远程度为该国到所有其他国家的距离的加权平均，权重为 GDP。</note></p>
+            <p>本文的研究也丰富了对需求不确定性与价格二者关系进行探讨的相关文献。先前的文献主要关注的是需求不确定性下的价格离散问题。为了解释同质产品在同一个市场甚
+               至同一个企业内的价格离散现象，Prescott（1975）、Eden（1990）和 Dana（1999）在需求不确定性和有限容量（costly capacity）的框架下对企业内的价格离散现象
+               进行了分析和解释。在这个框架下，不同的价格可以由不同的销售概率来解释。</p>
+            <p>本文的研究也有助于进一步理解需求不确定性如何影响企业的其他行为。现有不少文献尝试从需求不确定性方面解释企业出口的不同行为。Bernard 等（2010）在模型中
+               加入产品水平的需求冲击解释了企业出口产品的种类变化；Arkolakis 等（2018）则从需求学习的角度解释了企业的出口增长率与其出口年龄之间的负相关关系；
+               Timoshenko（2015）通过在模型中加入企业在目的地市场需求学习的过程，解释了企业的产品转换和出口的年龄依存现象。为了解释出口企业在某个市场的延迟进入现象
+               以及高退出率的现象，Nguyen（2012）则在生产率异质性厂商模型中加入需求不确定性。国内文献中，需求不确定性通常作为附加要素加入理论分析框架中，使模型设定
+               更一般化，比如喻言和任剑新（2017） 对中间品定价的研究，以及谭英双等（2018）对企业最优生产规模的研究。也有一些文献直接针对需求波动进行经验分析，比如
+               刘满芝等（2013）和张洪潮等（2014）对煤炭消费需求波动规律和成因的分析。</p>
+            <p>在 Arkolakis 等（2018）、Timoshenko（2015）和 Nguyen（2012）的模型中，需求不确定性有一部分可以通过企业的学习而逐渐减少，但是通常仍然有一部分不确定性
+               与学习无关，属于需求的随机波动。总体而言，这些都体现了企业对未来真实需求的不确定程度。本文研究中使用的需求不确定性是由企业过往的销售额的波动计算得到
+               的，因此，它不仅反映了需求的随机波动①，也反映了企业的学习过程，当然也包括了其他有助于企业更准确了解市场需求的因素。这种不确定性综合度量了企业对市场
+               需求预测的准确性。
+
+               本文的结构为：第二部分介绍了本文用来进行实证分析的数据；第三部分是本文的实证分析；第四部分进行了总结。
+               <note n="①" place="foot">需求的随机波动既来自于市场因素，也来自于政策因素，比如政策不确定性。政策变化的概率和可能改变的幅度都会影响政策不确定性的大
+                  小（王璐航和首陈霄，2019），进而影响市场需求。</note></p>
+         </div>
+      </front>
+      <body>
+         <div>
+            <head>二、数 据</head>
+            <p>（一）数据来源
+               本文使用中国海关的出口交易数据库在 2005 年的截面数据来探讨企业—产品水平上离岸价格与市场距离之间的关系。②这个数据库提供了每个出口企业在 8 位 HS 代码
+               水平上的出口目的地、出口价值（以美元计）和出口数量等方面的详细数据。为了减少计算需求不确定性时的计算量，本文将数据加总到 6 位 HS 代码水平上。出口的离
+               岸价格通过出口价值和出口数量计算得到。由于本文主要关注的是企业—产品水平上不同目的地价格之间的差异，因此，只有那些把产品销往多个目的地的企业样本才会
+               被考虑。在 2005 年的样本中，大约有 33%的企业—产品是销往多个目的地的，但是这些样本实现的出口值占总出口值的 86%以上。这个现象与 Manova 和 Zhang（2012）
+               所发现的一致，即出口更多的企业往往也进入更多的市场。
+               <note n="②" place="foot">由于 2007—2008 年金融危机的存在，本文无法准确估计金融危机期间以及之后几年的需求不确定性，因此，本文使用 2000—2004 年的数据
+                  估计需求不确定性，同时使用 2005 年和 2006 年的数据进行回归分析。</note></p>
+            <p>国家之间的距离数据来自于 CEPII 数据库。这个数据库提供了关于地理距离不同形式的测度数据。本文使用的是遵循大圆弧准则的测地线距离，计算中使用最重要的城市
+               或城市群的纬度和经度数据（Mayer  和 Zignago，2011）。为了计算需求不确定性，本文使用 2000—2004 年间的中国出口交易数据库。另外，根据经典的贸易引力模型，
+               本文选用 GDP 和人均 GDP 来控制目的地国家的规模和收入。每个国家的 GDP 和人口数据来自于 Penn World Table 8.1。为了控制每个市场的竞争程度，本文参照 Martin（2012）
+               的做法，使用目的地国家的平均进口单位价格作为竞争程度的量度。为了得到这个指标，本文利用 2005 年的联合国商品交易数据库（UN Comtrade Database）。以上主
+               要变量的描述性统计量见表 1。
+               <note xml:id="table1">表 1	描述性统计量</note></p>
+            <p>（二）数据描述性分析
+               虽然都是距离对单位价格的影响，但是有些文献探讨的是产品水平不同目的地之间的价格差异（Hummels 和 Skiba，2004；Baldwin 和 Harrigan，2011），有些文献探
+               讨的是公司 产品水平上不同目的地间的价格差异（Manova 和 Zhang，2012；Martin，2012）。本文的研究主要关注的是公司产品水平上的价格分布。</p>
+            <p>为了看清不同层面价格分布的大小，本文采用 Manova 和 Zhang（2012）中的方法计算了不同水平上的出口价格的变化。产品内的价格变化指的是每个产品内因为不同公
+               司或者出口目的地而导致的单位价格差异；企业产品内的价格变化指的是每个企业 产品组合内不同出口目的地之间的单位价格差异；国家产品内的价格变化指的是每
+               个国家 产品组合内不同企业之间的单位价格差异。这些价格差异都由相应的标准差来衡量。表 2 中列出的是三种不同水平上价格变化的描述性统计量。可以看到，价
+               格随着企业变化的标准差平均为 0.92，而价格随着目的地变化的标准差平均为 0.53。这说明，单位价格不仅存在显著的企业异质性，也在企业内部存在显著的国家异质
+               性。
+               <note xml:id="table2">表 2	不同水平上的出口价格的变化</note></p>
+            <p>如前文所述，企业内部存在目的地水平上的价格差异。现在我们探讨这种价格差异是否与市场距离相关。本文对价格和距离的对数形式在企业 产品水平上进行了去均
+               值的操作，从而保证本文调查的价格变化来自于企业内部。图 1 中以散点图和线性拟合的方式展示了对数形式的单位价格和对数形式的市场距离之间的关系。从图中可以
+               很明显地看出单位价格和市场距离之间的正相关关系。线性拟合的斜率大约为 0.020。
+               <note xml:id="figure1">图 1	单位价格和市场距离</note></p>
+            <p>（三）需求不确定性的度量
+               在本文的研究中，需求不确定性意味着位于目的地市场的进口商不知道未来可能的需求量。与 Nguyen（2012）不同，这里计算得到的需求不确定性不会因为企业的学习
+               过程而被完全消除掉，因为它综合反映了企业对市场需求预测的准确程度，即不仅反映了市场的系统波动，也反映了企业的学习过程。本文采用首陈霄（2018）中的方
+               法计算需求不确定性。首先，对于国家（c）产品（h）水平上的任一样本组，本文运行以下回归方程
+               <note xml:id="latex1">LaTeX数学公式</note></p>
+            <p>其中r是企业 f 出口产品 h 到目的地 c 的出口值在 t 和 t-1 期之间的对数变化。在回归方程的右边，有如下几个控制变量： Newf ,t 标识企业 f 是否是新的出口
+               企业（t -2 期没有出口的企业）； Exp f ,t  标识企业 f 是否曾经出口过，有出口经验（t -2 期之前任何一年有出口）； MultiProf ,t  标识企业 f 是否出口多
+               种产品； MultiDesf ,t  标识企业 f 是否出口到多个目的地。获得了这些回归的残差之后，针对每一国家 产品组（c, h），将其需求不确定性计算为残差的标
+               准差，高的标准差意味着高的需求不确定性：
+               <note xml:id="latex2">LaTeX数学公式</note></p>
+            <p>此外，借鉴首陈霄（2018）中的做法，本文也使用了另一个不确定性的量度，从而可以考虑到广延边际的情形，这就是在 2000—2004 年间的平均每年退出率。对每
+               一组（c, h），有：
+               <note xml:id="latex3">LaTeX数学公式</note></p>
+            <p>其中 NFt 是在 t 年出口产品 h 到目的地 c 的企业的数目。
+               前面构造需求不确定性的逻辑在于，企业的出口变化在剔除了企业自身特征的影响后可以解释为是由市场需求波动所导致的。退出率可以用来衡量需求不确定性是因为较
+               高的需求不确定性会降低企业的预期利润，使得生产率较低的企业退出市场，导致市场退出率的增加。</p>
+         </div>
+         <div>
+            <head>三、 实证结果</head>
+            <p>（一）距离与离岸价格
+               在上一节的数据描述中，本文发现企业内部因为目的地不同存在显著的价格差异，而且这种价格差异与目的地距离密切相关。在这一节，本文首先使用回归分析验证
+               企业是否会对更远的市场设置较高的离岸价格。回归方程的形式如下：
+               <note xml:id="latex4">LaTeX数学公式</note></p>
+            <p>其中lnuvihc 是企业 i 将产品 h 出口到国家 c 的单位价格的对数形式， lnDistc 是中国到目的地市场 c 的地理距离的对数形式， Xc 是其他的控制变量， vih 是企
+               业和产品的交叉固定效应。正如上一节中的数据描述里所介绍的，这里使用三个不同的控制变量。依据传统的贸易引力模型，GDP 和人均 GDP 用来控制目的地市场的规
+               模和财富水平。此外，本文还引入了目的地国家的平均进口价格水平， importpricehc ，来控制产品 h 在国家 c 的市场竞争程度。表 3 列出了回归的结果。
+               <note xml:id="table3">表 3	离岸价格和距离（2005 年中国出口海关数据）</note></p>
+            <p>列（1）—（3）的回归样本包括了中国出口商的所有目的地。列（1）的结果显示离岸价格的距离弹性为 0.021。这意味着，如果市场距离翻倍，平均而言出口企业会将
+               离岸价格提高 1.5%（ 20.021  1 ）。列（2）的回归增加了人均 GDP 和 GDP 两个控制变量。可以看到这两个衡量目的地国家财富水平的变量都对离岸价格有显著的正
+               向影响。距离的系数仍然显著为正且系数比列（1）中的结果要略微偏大。列（3）进一步增加了衡量目的地国家竞争程度的控制变量平均进口价格（Importprice）。平均
+               进口价格对离岸价格的影响也是显著为正的，但是影响程度比较小。距离的系数仍然显著为正且大小比列（1）的略大些。为了验证结果的稳健性，列（4）只包含了目的
+               地为 WTO 成员的样本。因为加入了 WTO 的国家通常经济政策较为稳定，彼此认同相似的市场规则。回归结果仍然与之前的相似。这说明，企业确实会对较远的市场设置
+               较高的离岸价格。①
+               <note n="①" place="foot">本文还发现，对于加工贸易企业，距离与离岸价格之间不存在显著的正相关关系。这一发现是与本文的观点相一致的。因为加工贸易企业
+                  通常对需求不确定性不敏感，所以，需求不确定性的作用机制对加工贸易企业不起作用，削弱了距离与离岸价格之间的正向关系。此外，加工贸易企业没有充分的定
+                  价权也会减弱距离与离岸价格之间的正相关关系。</note></p>
+            <p>（二）需求不确定性与离岸价格
+               这部分检验需求不确定性是否可以解释市场距离与离岸价格之间的正相关关系。本文认为市场距离主要通过需求不确定性影响企业的离岸价格。如果不存在需求不确定
+               性，市场距离对企业离岸价格的影响将不存在或者影响弱化很多。为了检验这个机制，本文在前面的回归方程中加入需求不确定性与距离之间的交互项以检验需求不确定
+               性这个机制是否存在，因此，回归方程变为：
+               <note xml:id="latex5">LaTeX数学公式</note></p>
+            <p>其中大部分标识的含义与前面回归方程中的保持一致。Uch 为（1）式中所计算的需求不确定性的量度。3 为距离的对数与需求不确定性之间交互项的系数，与 1 同
+               是本文主要关心的变量。如果需求不确定性是距离对离岸价格影响的主要机制，3 会显著为正，而 1 的正向作用会大大减小。 Xc 为其他控制变量。在这里本文依
+               然使用人均 GDP、GDP 和目的地的平均进口价格作为控制变量，并且控制企业产品交叉固定效应。表 4 给出了需求不确定性以及它跟距离的交互项对离岸价格的回归
+               的结果。</p>
+            <p>所有回归中，需求不确定性与距离的交互项的系数都是正的且显著。列（1）的结果显示，当引入需求不确定性与距离的交互项后，距离的单独项不再正向影响单位价格。
+               需求不确定性与距离的交互项的系数大小为 0.12，比表 3 中距离的系数要大，这是因为交互项也吸收了一部分需求不确定性对单位价格的正向影响。这说明，距离主要
+               是通过需求不确定性对单位价格有正向影响。列（2）和列（3）分别增加了控制变量目的地国家的规模（GDP）、财富水平（人均 GDP）和平均进口单位价格
+               （Importprice）。交互项和距离的系数大小虽有变化，但仍然与列（1）的发现保持一致。在列（4）和列（5）的回归中引入了另外一个度量需求不确定性的指标——退
+               出率。它可以捕捉需求冲击导致的广延边际变化。当增加了退出率与距离的交互项后，需求不确定性与距离的交互项的系数变化并不大， 只略微变小一些，而退出率与距
+               离的交互项系数则为正且显著。这说明，退出率可以捕捉到需求不确定性无法捕捉到的需求冲击，二者只有小部分重合。列（5）的回归只包括目的地为 WTO 成员的样本，
+               估计结果与列（4）的变化不大，表明前面的发现是稳健的。表4 各列的结果说明，需求不确定性确实是距离正向影响单位价格的主要渠道。
+               <note xml:id="table4">表 4	需求不确定、市场距离与离岸价格</note></p>
+            <p>（三）存货管理与离岸价格
+               正如引言中所讨论的，需求不确定性可能从两个方面影响企业的单位定价。一个是影响企业的投资。由于本文利用的是同一企业内不同目的地之间的变化来估计回归系数
+               的， 除非出口到不同目的地的产品生产技术上差异很大以致不能共用相同的生产设施，否则企业的投资不能解释同一企业在不同目的地之间的单位价格差异。当然，企
+               业的投资也可以指的是企业在目的地市场的营销开支等与出口目的地市场密切相关的沉没成本。一般来 说，这些沉没成本只可能受需求不确定性的影响，而与单纯的市
+               场距离没有关系。但如果考虑到市场距离对信息传播的影响（Fernandes 和 Tang，2014），市场距离也有可能影响企业的营销成本，从而影响产品的定价。不过，由于
+               投资和营销数据的不可得，这里重点关注需求不确定性的存货成本机制的验证，也就是需求不确定性是否通过存货成本影响企业的单位定价。</p>
+            <p>由于本文预期存货成本在需求不确定性影响企业的离岸价格的过程中起到中介变量的作用，所以本文依据 Baron 和 Kenny（1986）、温忠麟等（2005）提出的中介效应检
+               验程序，采用三步法检验存货成本的中介效应。</p>
+            <p>第一步，以企业的离岸单价为因变量，企业在目的地市场面临的需求不确定性与市场距离的交互项作为自变量进行回归分析。这一步的分析已经在上一节里做过了，已经验
+               证了需求不确定性与市场距离的交互项对离岸价格有显著作用，且只有交互项对离岸价格有正向作用。</p>
+            <p>第二步，以企业的存货成本为因变量，需求不确定性与市场距离的交互项为自变量进行回归分析，验证需求不确定性与存货成本之间存在相关关系。这一步中所要阐述的
+               关系在首陈霄（2018）中得到了充分的验证，因此，本文这里不再重复。正如首陈霄（2018）中说明的，运输频次反映的是企业的存货策略，因此，运输频次可以作为存
+               货成本的一个间接量度。首陈霄（2018）发现需求不确定性与距离之间的交互项会负向影响运输频次。也就是说，交互项越大，运输频次越低，最优的存货水平会越高，
+               存货成本也会越高。</p>
+            <p>第三步，以企业的离岸单价为因变量，需求不确定性与市场距离的交互项和运输频次（存货成本的代理变量）作为自变量进行回归分析。回归方程如下：
+               <note xml:id="latex6">LaTeX数学公式</note></p>
+            <p>其中大部分标识的含义与前面回归方程中的保持一致。lnhihc 为企业、产品和目的地水平上在一年里有贸易的月份数，代表企业的运输频次。如果运输频次的系数为负
+               的且显著， 也就是存货成本正向影响离岸单价，那么存货成本的中介效应显著。如果在运输频次的系数显著的同时，需求不确定性与市场距离的交互项的系数不再显著，
+               那么存货成本的中介效应为完全中介效应。表 5 给出了对存货成本的中介效应进行检验的第三步回归的结果。
+               <note xml:id="table5">表 5	存货成本与离岸价格</note></p>
+            <p>所有回归的结果中，有贸易的月份数（NumofMonths）的系数都是负的且显著。这说明以有贸易的月份数衡量的运输频次是需求不确定性和距离的交互项影响离岸价格的中
+               介变量。从表中还可以看到所有的交互项系数也是正的且显著，而且普遍比表 4 中的结果要小一些。这表明存货成本并不是完全中介效应，但是，它可以解释一部分交
+               互项对离岸价格的正向影响。列（4）和列（5）加入了另外一个需求不确定性的量度退出率与距离的交互项，且列（5）的回归仅使用目的地为 WTO 成员的样本。退出率
+               捕捉了需求不确定性捕捉不到的广延边际上需求波动导致的后果。可以看到，退出率与距离的交互项的系数也是正的且显著，而且其绝对值比表 4 中列（4）和列（5）的
+               要小许多。这再次说明，存货成本在需求不确定性与距离的交互项影响离岸价格的过程中起到部分中介效应的作用。</p>
+            <p>存货成本不能完全解释需求不确定性与距离的交互项对离岸价格的影响，有两个可能的原因。一个是用有贸易的月份数衡量存货成本存在的量度误差。首先，用有贸易
+               的月份数衡量运输频次就是一种近似的做法。由于本文不能保证海关数据中每一条记录都对应一次真实的交易，所以，使用有贸易的月份数来衡量运输频次是更为保守但
+               可靠的做法。其次，运输频次只是存货成本的间接反映，并不能完全刻画存货成本的变化。但是，由于本文没有企业层面的存货数据，尤其是与目的地相关联的存货数据，
+               因此，运输频次是本文仅有的能反映企业、产品和目的地水平上存货水平的数据。另一个则是前面所提到的，存货成本只是需求不确定性和距离的交互项影响离岸价格的其
+               中一个机制，还存在其他可能的机制。比如企业的投资，尤其是与目的地相关联的固定成本投入，比如营销成本等。还可能是信息的不对称。距离和需求不确定性都会影响
+               企业及时获得真实的市场信息，从而增加企业做出最优决策的困难。这些可能的机制都有待于通过今后的研究来深入了解。</p>
+            <p>对于上面的发现，本文做了一系列的稳健性检验，比如控制产品质量的影响，以及使用运输频次而不是有贸易的月份数作为存货水平的代理变量，结论都保持不变。具体
+               请参见本文的“附录与扩展”。</p>
+         </div>
+         <div>
+            <head>四、总 结</head>
+            <p>本文尝试从需求不确定性的角度解释距离与离岸价格之间的正相关关系。使用中国2005 年的海关出口数据，本文在企业—产品水平上确实发现了先前文献
+               （比如 Manova 和Zhang（2012）、Martin（2012）等）所指出的企业对距离较远的市场设置更高的离岸价格的事实。同样使用 2005 年的海关数据，本文发现，当加
+               入距离和需求不确定性的交互项后，距离对离岸价格的正向作用完全被交互项所吸收，而距离本身的系数不再为正。因此， 本文认为需求不确定性是距离影响离岸价格
+               的重要机制。有别于其他文献从产出角度的解释（主要是产品质量），本文的解释是从需求角度对这一问题的重新解读。</p>
+            <p>本文还进一步探讨了需求不确定性影响企业定价的机制。通过检验中介效应的“三步法”，本文发现作为存货成本间接量度的运输频次在需求不确定性和距离的交互项
+               正向影响离岸价格过程中起到部分中介效应的作用。因此，存货成本可以部分解释距离如何通过需求不确定性对单位价格产生正向影响。之所以只能部分解释，一方面
+               是可能存在其他机制，比如企业的投资机制等，另一方面在于使用运输频次衡量存货成本有衡量误差，特别是在使用有贸易的月份数作为运输频次的度量时。</p>
+            <p>本文的研究表明传统的异质厂商模型中由于没有考虑到需求不确定性的影响，所以得出了与实证发现不一致的预测。因此，为了更好地解释现实情形，贸易模型有必要
+               将需求不确定性这一因素考虑进来。</p>
+         </div>
+      </body>
+      <back>
+         <div type="bibliography">
+            <listBibl>
+               <bibl>
+                  参考文献:
+                  1 刘满芝、高晓峰、屈传智、周梅华、殷馨:《中国煤炭需求波动规律研究》[J],《资源科学》2013年第4期,第681—689页.
+                  2 首陈霄:《交付滞后、需求不确定性与运输频次》[J],《经济学动态》2018年第10期,第60—74页.
+                  3 孙一平、徐阳、徐小聪:《地理距离、离岸出口价格与运输成本:新的福利来源》[J],《当代财经》2017年第12期,第87—97页.
+                  4 谭英双、张雪清、衡爱民:《需求不确定下企业生产规模选择及影响因素研究》[J],《中国管理科学》2018年第8期,第138—145页.
+                  5 王璐航、首陈霄:《中国入世与出口增长:关于关税不确定性影响的再检验》[J],《经济学》(季刊)2019年第2期,第721—748页.
+                  6 温忠麟、侯杰泰、张雷:《调节效应与中介效应的比较和应用》[J],《心理学报》2005年第2期,第268—274页.
+                  7 喻言、任剑新:《需求不确定条件下中间品区别定价的竞争效应与反垄断规制》[J],《财贸研究》2017年第7期,第8—20页.
+                  8 张洪潮、王泽江、李晓利、蒲光华:《中国煤炭消费需求波动规律及成因分析》[J],《中国人口·资源与环境》2014年第1期,第94—101页.
+                  9 Arkolakis C., Papageorgiou T., Timoshenko O.A., 2018, “Firm Learning and Growth”[J], Review of Economic Dynamics, Vol.27: 146-168.
+                  10 Baldwin R., Harrigan J., 2011, “Zeros, Quality, and Space: Trade Theory and Trade Evidence”[J], American Economic Journal: Microeconomics, Vol.82, No.2: 99-111.
+                  11 Baron R.M., Kenny D.A., 1986, “The Moderator-mediator Variable Distinction in Social Psychological Research: Conceptual, Strategic, and Statistical Considerations”[J], Journal of Personality and Social Psychology, Vol.51, No.6: 1173-1182.
+                  12 Bastos P., Silva J., 2010, “The Quality of a Firm's Exports: Where You Export to Matters”[J], Journal of International Economics, Vol.82, No.2: 99-111.
+                  13 Békés G., Fontagné L., Muraközy B., Vicard V., 2017, “Shipment Frequency of Exporters and Demand Uncertainty”[J]. Review of World Economics, Vol.153, No.4: 779-807.
+                  14 Bernanke B.S.,1983, “Irreversibility, Uncertainty, and Cyclical Investment”[J], Quarterly Journal of Economics, Vol.98, No.1: 85-106.
+                  15 Bernard A.B., Redding S.J., Schott P.K., 2010, “Multi-product Firms and Product Switching”[J], American Economic Review, Vol.100, No.1: 70-97.
+                  16 Dana J.D., Jr., 1999, “Equilibrium Price Dispersion under Demand Uncertainty: the Roles of Costly Capacity and Market Structure”[J], RAND Journal of Economics, Vol.30, No.4: 632-660.
+                  17 Dixit A.K., Pindyck R.S., 1994, Investment and Uncertainty [M], Princeton, NJ: Princeton University Press.
+                  18 Eden B.,1990, “Marginal Cost Pricing When Spot Markets are Complete”[J], Journal of Political Economics, Vol.98, No.6: 1293-1306.
+                  19 Fajgelbaum P., Grossman G., Helpman E., 2011, “Income Distribution, Product Quality and International Trade”[J], Journal of Political Economy, Vol.119, No.4: 721-765.
+                  20 Fernandes A.P., Tang H., 2014, “Learning to Export from Neighbors”[J], Journal of International Economics, Vol.94, No.1:67-84.
+                  21 Hallak J.-C.,2006, “Product Quality and the Direction of Trade”[J], Journal of International Economics, Vol.68, No.1: 238-265.
+                  22 Hummels D., Skiba A., 2004, “Shipping the Good Apples Out? An Empirical Confirmation of the Alchian-Allen Conjecture”[J], Journal of Political Economy, Vol.112, No.6: 1384-1402.
+                  23 Hummels D., Klenow P., 2005, “The Variety and Quality of a Nation's Exports”[J], American Economic Review, Vol.95, No.3: 704-723.
+                  24 Johnson R.C.,2012, “Trade and Prices with Heterogeneous Firms”[J], Journal of International Economics, Vol.86, No.1: 43-56.
+                  25 Manova K., Zhang Z., 2012, “Export Prices Across Firms and Destinations”[J], Quarterly Journal of Economics, Vol.127, No.1: 379-436.
+                  26 Martin J.,2012, “Markups, Quality, and Transport Costs”[J], European Economic Review, Vol.56, No.4: 777-791.
+                  27 Mayer T., Zignago S., 2011, “Notes on CEPIIs Distances Measures: The GeoDist Database” [D], MPRA Paper, No.36347.
+                  28 Nguyen D.X.,2012, “Demand Uncertainty: Exporting Delays and Exporting Failures”[J], Journal of International Trade, Vol.86, No.2: 336-344.
+                  29 Prescott E.C.,1975, “Efficiency of the Nature Rate”[J], Journal of Political Economics, Vol.83, No.6: 1229-1236.
+                  30 Pindyck R.S.,1988, “Irreversible Investment, Capacity Choice and the Value of the Firm”[J], American Economic Review, Vol.78, No.5: 969-985.
+                  31 Timoshenko O.A.,2015, “Product switching in a model of learning”[J], Journal of International Trade, Vol.95, No.2: 233-249.
+                  32 Simonovska I.,2015, “Income Differences and Prices of Tradables”[J], The Review of Economic Studies, Vol.82, No.4: 1612-1656.
+                  33 Verhoogen E.,2008, “Trade, Quality Upgrading and Wage Inequality in the Mexican Manufacturing Sector”[J], Quarterly Journal of Economics, Vol.123, No.2: 489-530.
+                  34 Zipkin P.H.,2000, Foundations of Inventory Management[M], McGraw-Hill.
+                  </bibl>
+            </listBibl>
+         </div>
+         <titleStmt xml:lang="en"> 
+            <title type="main">
+               Market Distance, Demand Uncertainty and FOB Price
+            </title>
+            <author>
+               <name>
+                  <surname>Shou</surname>
+                  <forename>Chenxiao</forename>
+               </name>
+               <affiliation>
+                  <orgName>School of Business, Hunan Normal University</orgName>
+               </affiliation>
+            </author>
+         </titleStmt>
+         <profileDesc xml:lang="en">
+            <abstract>
+               <p>Abstract：There has been much empirical evidence documenting a positive relationship between market distance and FOB (free on board) price. 
+                  In contrast to most previous literature focusing on product quality, we try to explain this phenomenon with demand uncertainty. Using transaction
+                  records of Chinese exporters in 2005, we show that, after accounting for an interaction term between distance and demand uncertainty, the 
+                  positive effect of distance on FOB price is completely absorbed, making the coefficient of distance no longer positive. Through the Three-Step 
+                  Approach used for examining mediating effects, we further find that shipment frequency, which is used as an indirect measure for inventory costs,
+                  reacts as the partial mediating variable in the process that the interaction term between distance and demand uncertainty affects FOB prices. 
+                  Hence, inventory costs can partially explain how distance affects unit price through demand uncertainty. Our study suggests that demand uncertainty
+                  is a very important channel through which distance affects FOB prices, and should be factored in trade models to better capture reality.</p>
+            </abstract>
+            <textClass>
+               <keywords>
+                  <term>Market Distance</term>
+                  <term>Demand Uncertainty</term>
+                  <term>FOB Price</term>
+                  <term>Shipment Frequency</term>
+                  <term>Inventory Cost</term>
+               </keywords>
+               <classCode scheme="https://www.aeaweb.org/econlit/jelCodes.php">JEL Classification: L20	F10	F14</classCode>
+            </textClass>
+         </profileDesc>
+      </back>
+  </text>
+</TEI>

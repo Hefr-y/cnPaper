@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt xml:lang="cn"> 
+            <title type="main">
+               城镇化与中国农村减贫*
+               <note n="*" place="foot">
+                  本文是国家社科基金重点项目“建立解决相对贫困长效机制的财税政策研究”（项目编号：20AZD078）、国家自然科学基金项目“面向家庭和个人的公共转移支付减贫
+                  效应研究”（项目编号：71673167）的阶段性成果。作者感谢匿名审稿人的宝贵意见，文责自负。
+               </note>
+            </title>
+            <!-- author information in separate <author> elements per author -->
+            <author>
+               <name>
+                  <surname>解</surname>
+                  <forename>垩</forename>
+               </name>
+               <affiliation>
+                  <orgName>山东大学经济学院</orgName>
+                  <rs type="city">山东济南</rs>
+                  <rs type="postcode">250199</rs>
+               </affiliation>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>北京大学图书馆</publisher>
+            <date>2020-06-17</date>
+            <idno type="doi" xml:base="https://doi.org/">10.12088/PKU.jjkx.2020.03.01</idno>
+            <idno type="北大经济科学期刊" xml:base="http://ccj.pku.edu.cn/jjkx/CN/article/showTenYearOldVolumn.do">2020, Vol. 42(3): 5-16</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <p xml:base="http://www.oaj.pku.edu.cn/">北京大学期刊网</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc xml:lang="cn">
+         <abstract>
+            <p>摘要: 基于中国家庭动态跟踪调查（CFPS）2010年、2012年、2014年的面板数据,本文使用工具变量面板数据固定效应的两部模型分析了城镇化对农村家庭人均收入、
+               消费及贫困的影响。研究发现：城镇化促进了农村家庭工资收入和财产收入的增长,对经营收入影响微弱,其对经营收入占比甚至起到了显著的降低作用,城镇化使农村家
+               庭人均收入、人均消费显著上升,城镇化水平每提高1%,家庭人均收入增长约0.7%,家庭人均消费增长约1.1%;城镇化显著地减少了农村贫困,但其减贫的作用较小,且随着
+               时间的推移城镇化的减贫贡献逐渐减弱;当把农村样本分成郊区农村和纯农村、东中西部地区、平原和非平原地区时,城镇化对每一分组样本下的人均收入、消费及贫困
+               的影响效应均呈现出了异质性特点。城镇化减少农村贫困的机制是农村土地渠道、非农就业渠道以及技术和市场的溢出效应渠道,汇款机制调节作用有限。</p>
+         </abstract>
+         <textClass>
+            <keywords>
+               <term>城镇化</term>
+               <term>农村家庭收入</term>
+               <term>消费</term>
+               <term>农村贫困</term>
+            </keywords>
+            <classCode scheme="http://www.ztflh.com/">中图分类号：F323.8</classCode>
+            <classCode scheme="https://www.aeaweb.org/econlit/jelCodes.php">JEL分类号：O18	I30	R11</classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change><!-- Description of a change to the article; using @who and @when. --></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="引言" xml:id="introduction">
+            <head>一、引言与文献综述</head>
+            <p>城镇化日益被视为 21 世纪最重要的问题之一。目前世界上有一半以上的人口居住在城镇，预计到 2050 年这一数字将上升到 75%，大部分城市增长主要集中于亚洲和非
+               洲地区（United Nations，2015）。1978 年，中国城镇人口只有 1.7 亿，占总人口的 17.9%，到2016 年该比例上升到 57.3%。①与此同时，按当年价现行农村贫困标
+               准衡量，1978 年末农村贫困发生率约 97.5%，2017 年末农村贫困发生率为 3.1%，农村贫困发生率下降 94.4 个百分点，年均下降 2.4 个百分点。②那么，城镇化与农
+               村贫困减少二者之间是否有关？
+               <note n="①" place="foot">因篇幅所限，本文省略了中国城镇化发展历程回顾，感兴趣的读者可在《经济科学》官网论文页面“附录与扩展”栏目下载。</note>
+               <note n="②" place="foot">数据来源于国家统计局。参见http://www.stats.gov.cn/ztjc/ztfx/ggkf40n/201809/t20180903_1620407.html。</note></p>
+            <p>城镇化通过如下几个渠道影响农村家庭的收入、消费和贫困（Mallick，2014）：其一，汇款渠道。城镇化往往伴随着农村人口向城市的迁移，这意味着劳动者从农业部门
+               和农村地区转向工业部门和城镇地区，迁移会使农村移民的收入和消费水平提高，通过移民的汇款，农村家庭收入和消费水平预期也会上升。汇款还可以用来进行人力资
+               本投资或社会资本投资，进而带动农村劳动生产率提高或促进农村劳动力从事非农活动。汇款在减少农村家庭的资源约束及在为负向冲击提供保险方面有积极作用。当然，
+               如考虑到以下情况，由城市转移到农村的汇款净流入可能会减少，即移民家庭往往给初次留在城市的移民提供货币或实物等经济支持，这种旨在支付移民固定成本的支持
+               可以解释为一项投资，其回报是随后收到的反向城乡汇款流量（Stark，1980）。移民对留守家庭的影响在实证中并没有一致的结论，一些文献认为汇款对家庭收入增长
+               和缓解贫困有积极作用（Bouiyour 等，2016），另一些文献则认为移民对贫困没有作用（Yang，2008）。其二，非农就业渠道。城市地域扩张有利于非农经济活动的多
+               样化，进而对收入有正面影响（Jacoby 和 Minten，2009），这种效应对地理上靠近城市的乡村尤为重要，由于城市提供了密集的市场来更有效地交换商品和服务，靠近
+               城市的农户可以依据其比较优势从事特定的经济活动，依靠市场来满足消费和投资需求，更广泛的专业化生产可能会提高生产率和收入。此外，靠近城市能够刺激农业贸
+               易的非农活动，比如运输和营销。城市刺激附近农村高回报非农就业的例子在亚洲地区比较常见。城市扩张还使得城市周边劳动者通勤的概率上升，进而会带动城郊诸如
+               消费和零售的非农活动的增长来满足通勤人口不断增长的服务业需求。企业在城市中集聚并吸引城市和城市附近的农村劳动者就业，农民工工资得以增加。另外，基于
+               城乡间工资差异的迁移可能会使农村劳动力供给下降并引致农村劳动力工资上升。其三，农产品消费需求渠道。农产品需求渠道主要通过收入效应和替代效应起作用。
+               收入效应指城市收入高于农村而引致的对农产品需求增加，即城市对农产品、劳动密集型产品的需求随着城市经济和人口密度的增长而增长，运输条件和基础设施的改善
+               使农产品从农村运往城市的运输成本降低。由于运输成本降低，亚洲国家的劳动密集型出口产品从城市向农村转包的情形增加。替代效应与较高附加值产品在农业总需求
+               中所占比例的增加有关，这是典型的更复杂的城市消费者的特征（Cali  和 Menon，2013）。其四，农村土地渠道。城市扩张增加了附近农地改居住用地的需求，农地价
+               格将上升，土地所有者可以通过租赁、售卖土地等形式获得更高收入（Plantinga  等，2002）。事实上，前述农产品消费需求渠道中，预期未来农业收入的上升也会带
+               动土地租赁价格上升。土地渠道对农村贫困的最终影响还取决于增加的这部分农业收入在农村人群中的分布，如果土地非常集中，这个渠道可能只会使少数地主受益，且
+               没有土地的人群获得有偿就业的机会也会受到限制，这时该渠道减少贫困的效果就会打折扣。此外，劳动力从农村转向城市无疑会降低农村劳动力供给，农村人均可用土
+               地相应地增加，由于土地数量固定不变、土地边际收益递减，可用性土地的增加应该会提高农业劳动生产率并给农村工资带来上涨压力（Cali  和 Menon，2013）。其
+               五，技术和市场的溢出效应渠道。农村居民生活水平因城市化溢出效应而上升。除了迁移外（Arouri 等，2017），城乡之间诸如信息传递、先进技能和知识传播等其他
+               互动形式也对农村人力资本的形成产生积极影响。而且，城市化在城市和附近农村地区的经济和社会结构中起着至关重要的作用，它为教育、健康服务和环境设施改进提
+               供了机会。教育资本决定了农村居民学习与使用技术的能力，健康资本则影响经济活动和减贫。</p>
+            <p>然而，城镇化并不必然引起农村家庭收入的增长，比如劳动力向城市迁移降低了农村劳动力供给，短期内迁移者无法汇款给留守农村的家人，他们必然会经历收入下降之
+               痛。从长期来看，农村到城市的迁移会阻止这些家庭参与高回报的劳动密集型活动。再如，在农村土地渠道中，如果最具有生产效率的农村劳动力转移到城市，可能会抵
+               消移民带来的生产率提高效应。此外，汇款可能产生道德风险问题。一些文献研究表明移民会影响迁移家庭中其他成员的劳动决策，并会提高他们的保留工资
+               （Grigorian和Melkonyan，2011）。汇款会对接受者的劳动供给产生负向激励。综上所述，城镇化可能通过汇款、非农就业、农产品消费需求、农村土地、技术和市场的
+               溢出效应等渠道影响农村家庭的农业或非农活动，其对贫困的影响在理论上没有明确答案，结论的得出依赖于上述不同渠道相对力量的比较。</p>
+            <p>从本世纪初起，学者们开始研究城镇化对发展中国家贫困的影响，尤其是对农村贫困的影响。比如，Ravallion等（2007）研究发现，城镇化对减少贫困有积极影响，但
+               城镇化减贫效力因地区不同而不同。Martinez-Vazquez等（2009）利用非平衡跨国的面板数据分析得出了城镇化与贫困之间存在U形关系的结论。Cali和Menon（2013）利
+               用印度1983—1999年的地区面板数据估计了城镇化对贫困减少的影响，该研究使用地区间迁移数据预测了城市人口、城市就业中制造业人口就业比重，并借助了工具变量
+               方法，他们得到的结论是，大约75% 的城镇化减贫效果可以用农村商品需求的增加来解释，农村到城市迁移的贡献不足20%。Mallick（2014）研究表明在印度农业部门萎
+               缩的过程中，贫困劳动者从农村流向城市有助于减少农村贫困。Arouri等（2017）使用越南4个年份的微观调查数据分析发现，城镇化在增加农村非农收入的同时使得农
+               业收入下降，城镇化减少了农村贫困。Higashikata和Hashiguchi（2017）基于印度尼西亚家庭微观数据，使用有效市场规模增长作为城镇化的代理指标的分析表明，城
+               镇化导致农村家庭尤其是贫困农村家庭人均支出增加，贫困家庭福利增长主要由非农收入增加所致。杨沫等（2019）认为城镇化过程使农业转移人口具有较高的代际职业
+               流动性。崔万田和何春（2018）运用2000—2014年中国25个省份的面板数据实证发现：城镇化与农村贫困呈现出U形关系，在城镇化发展前期，城镇化有利于农村贫困的
+               减少，在城镇化发展后期，城镇化不利于农村贫困的减少；城镇化农村减贫的收入效应要大于转移效应。何春和崔万田（2017）选取32个发展中经济体1992—2015年的
+               数据进行了实证检验，表明城镇化建设能够提高教育、健康、农业生产率，从而有助于贫困的减少。夏庆杰等（2017）主要从城市化和城市贫困、城市化与农村贫困、中
+               国城市化和贫困方面进行了综述。万广华等（2017）研究发现，中国的城市化能有效减少农村和农民工的贫困。</p>
+            <p>本文基于中国家庭动态跟踪调查（CFPS）2010年、2012年、2014年的面板数据，使用工具变量面板数据固定效应的两部模型分析了城镇化对农村家庭人均收入、消费及贫
+               困的影响。本文在分析城镇化对农村家庭收入的影响时，研究了城镇化对经营收入、工资收入、财产收入、转移收入等不同收入来源的影响，此外还把农村按郊区与纯农
+               村、东中西地域、平原与非平原地貌特征进行了分组并对其进行实证检验。</p>
+         </div>
+      </front>
+      <body>
+         <div>
+            <head>二、数据来源及方法</head>
+            <p>（一）数据来源
+               本文使用的微观数据来自于北京大学中国社会科学调查中心执行的“中国家庭动态跟踪调查”（CFPS）。CFPS的抽样设计关注初访调查样本的代表性，采用了内隐分层
+               的、多阶段的、多层次与人口规模成比例的概率抽样方式（PPS）。样本覆盖了除香港特别行政区、澳门特别行政区、台湾省、新疆维吾尔自治区、青海省、内蒙古自治
+               区、宁夏回族自治区和海南省之外的25个省份。CFPS的问卷分为三个层级：个体，个体生活的紧密环境即家庭， 家庭的紧密环境即村居，因此形成了三种问卷：个人问
+               卷、家庭问卷、村居问卷，其中根据年龄特征把个人问卷分为成人问卷和少儿问卷。本文选取了2010年、2012年和2014年三次调查的面板数据，家庭数量为6 107个，三
+               年样本数量共计18 321个。以城镇人口占总人口的比重来衡量的各省份城镇化水平，数据来源于国家统计局网站。①
+               <note n="①" place="foot"> 因篇幅所限，本文省略了城镇化与农村家庭的收入、消费和贫困率的表格，感兴趣的读者可在《经济科学》官网论文页面“附录与扩
+                  展”栏目下载。</note></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </div>
+         <div>
+            <head>三、理论分析与研究假设</head>
+            <p>企业集团，区别于一般企业，控股母公司能够在集团内部构建内部资本市场，对成员企业的资金进行统一调配。相比同行业企业或上下游企业，集团成员企业之间的联系
+               更为紧密，譬如：企业集团成员企业的投资规模不仅与自身现金水平相关，还与其他成员企业相关；企业集团成员企业存在业绩传染效应等（Shin 和Stulz，1998；杨棉
+               之等，2010；黄俊等，2013）。本文认为，当集团内部某一企业出现业绩大幅下滑时，主要通过交叉补贴传导机制和负面信息传染渠道影响企业获得的商业信用。</p>
+            <p>一方面，集团内部业绩冲击可能通过交叉补贴传导机制影响集团内部的关联商业信 用。已有研究发现，企业集团内部存在对于子公司的支持行为（La Porta 等，2003）。
+               譬如，在亚洲金融危机期间，一些企业集团为了帮助子公司摆脱经营困境，会主动对这些子公司进行补贴和支持（Mitton，2002）。这主要是由于企业集团控股股东认为，
+               对经营绩效较差子公司的支持行为能够在未来给集团带来收益。在这样的动机下，我们会发现企业集团将资源从经营绩效较好的子公司转移到经营绩效较差的子公司中的
+               现象，即交叉补贴行为（Bae 等，2008）。当集团内部某一企业出现业绩大幅下滑时，部分企业集团为保证整个集团的经营稳定性，在下一年度会对业绩大幅下滑的企业
+               进行支援，产生交叉补贴行为（黄俊等，2013）。关联交易是我国上市公司实现企业间利益流动的主要方式（佟岩和程小可， 2007），企业集团的交叉补贴行为更多地
+               通过关联交易进行，这可能导致受业绩冲击影响的集团其他成员企业在关联交易过程中所能获得的资金支持减少，表现为关联商业信用水平的下降。</p>
+            <p>另一方面，集团内部业绩冲击可能通过负面信息传染渠道，影响集团外部的非关联商业信用。买方市场理论指出，商业信用是供应商为了促进产品销售，而主动向优质的
+               客户提供资金的一种促销方式。市场地位较高、内部控制较好的企业，往往能够获得更高的商业信用（张新民等，2012；郑军等，2013；刘欢等，2015）。由于集团内各
+               企业存在紧密联系，外界利益相关者会将集团某一企业的业绩变动，作为判断其他成员企业未来经营业绩的依据（Bae 等，2008）。因此，当集团内某一企业出现业绩大
+               幅下滑时，这一事件所释放强烈的负面信息会对整个集团产生不利影响，外界利益相关者对集团其他企业往往也会持负面判断。在这种情况下，上下游企业作为企业的
+               合作者和贷款人，能够识别出业绩大幅下滑企业与被影响企业之间的密切联系。此时，企业集团释放的负面信息，会引发外界上下游企业对被影响企业未来发展状况的
+               担忧，被影响企业对上下游企业的议价能力下降，在与二者的谈判过程中难以再获得上年度同等规模的商业信用。同时，负面信息的传染效应不仅存在于同一集团成员
+               企业之间，还存在于供应链上下游企业之间（Jorion 和Zhang，2009；王雄元和高曦，2017），作为受集团内业绩冲击影响企业的上下游企业，它们同样可能受到负面信
+               息的不利影响，进而降低了集团企业的商业信用规模。</p>
+            <p>基于上述分析，本文认为，当集团内部某一成员企业出现业绩大幅下滑时，企业集团内部的交叉补贴行为和负面信息传染可能会分别影响其他成员企业的关联商业信用规
+               模 和非关联商业引用规模，进而影响企业最终获得的商业信用规模。据此，本文提出假设 1：
+               H1：当集团内部某一成员企业发生业绩大幅下滑时，下一年度其他成员企业获得的商业信用规模将缩小。</p>
+         </div>
+         <div>
+            <head>四、研究设计</head>
+            <p>（一）数据和样本
+               企业集团是指同一管理权威下一组公司的集合（Granovetter，1994）。受到数据来源限制，本文参考以往研究，定义当上市公司实际控制人同时控股两家及以上上市公
+               司时，该上市公司属于集团控股上市公司，以 2007－2015 年沪深 A 股上市公司为初始研究样本， 并根据公司年报披露的控股结构图，判断公司是否属于集团控股上市
+               公司，选择集团控股上市公司作为最终的研究样本（Buchuk 等，2014；纳鹏杰等，2017）。根据以上方式筛选，在剔除金融业样本和数据缺失样本后，最终得到 4 834
+               个公司—年度观测值，分布在 282 个企业集团中。本文其余数据来自 CSMAR 数据库和 WIND 数据库。为消除可能存在的极端值影响，本文使用 Winsorize 方法，对全部
+               连续变量按照 1%和 99%的水平进行缩尾处理。为使回归结果更加稳健，本文在所有回归分析中，均在公司层面进行了聚类处理。</p>
+            <p>（二）变量的选择和度量
+               1.	业绩冲击
+               参考已有文献，本文使用息税前利润增长率是否为负作为业绩下滑的判定标准（黄俊等，2013）。为消除行业变动因素干扰，本文首先对息税前利润增长率分行业进行了
+               调整，使用企业息税前利润增长率减去行业平均息税前利润增长率，度量经行业调整后的息税前利润增长率。随后，在每年发生业绩下滑的企业中，将下降幅度最大的前
+               30%分位数的企业定义为发生业绩大幅下滑企业，并定义发生业绩大幅下滑年度为事件年度。在此基础上， 依据已有文献，本文定义当集团内某一企业发生业绩大幅下
+               滑，且该企业资产占集团全部上市公司资产总和的比例大于 20%时，认定该企业会对其他企业造成业绩冲击（黄俊等， 2013）。在下一年度，该集团的其他企业为受业
+               绩冲击影响企业，业绩冲击的哑变量 POST赋值为 1，否则为 0。</p>
+            <p>2.	商业信用
+               参考以往文献（Ge  和 Qiu，2007；陆正飞和杨德明，2011），我们将被解释变量商业信用（TC）界定为公司应付账款、应付票据和预收账款之和除以公司总资产。</p>
+            <p>3.	其他变量
+               参考以往文献（Ge  和 Qiu，2007；陆正飞和杨德明，2011），我们控制了如下变量：短期借款（SBANK）、长期借款（LBANK）、盈利能力（ROE）、企业规模（SIZE）、
+               固定资产比例（PPE）、上市年限(AGE）、第一大股东持股(FIRST）和主营业务收入增长率(GROW）。此外，我们还控制了年度和行业固定效应。各变量的符号与具体定义
+               如表 1 所示。
+               <note xml:id="table1">表 1	变量符号与定义</note></p>
+            <p>（三）实证模型
+               为了验证假设 1，本文借鉴以往研究（黄俊等，2013），采用模型（1）来检验业绩冲击是否影响商业信用，模型（1）中变量具体定义如表 1 所示。需要说明的是，模
+               型（1） 中，业绩冲击变量 POST 虽然是同期（t 期）变量，但 POST=1 实际上反映了该企业所属企业集团在上一年度（t-1 期）存在至少一家业绩大幅下滑的上市公司。
+               若假设 1 成立，则1 的系数应当显著为负。
+               <note xml:id="latex1">LaTeX数学公式</note></p>
+         </div>
+         <div>
+            <head>五、实证结果分析</head>
+            <p>（一）描述性统计分析
+               表 2 报告了文中主要变量的描述性统计结果。商业信用（TC）的均值和中位数分别为0.193 和 0.155，标准差为 0.139，表明商业信用指标在样本公司中差异不大。业
+               绩冲击（POST）的均值和中位数分别为 0.191 和 0，表明多数集团成员企业并未受业绩冲击影响。
+               <note xml:id="table2">表 2	主要变量描述性统计</note></p>
+            <p>（二）多元回归结果与分析
+               表 3 报告了假设 1 的检验结果：回归（1）中，在不加入控制变量的情况下，POST 的系数为-0.010，在 10%的水平上显著；回归（2）中，在控制了年度效应和行业效
+               应后， POST 的系数为-0.011，在 5%的水平上显著；回归（3）中，在进一步控制了其他影响商业信用规模的变量后，POST 的系数为-0.013，并在 1%的水平上显著。
+               <note xml:id="table3">表 3   业绩冲击与商业信用回归结果</note></p>
+            <p>控制变量回归结果显示：长期借款（LBANK）和固定资产比例（PPE）与商业信用显著负相关，第一大股东持股（FIRST）和主营业务收入增长率（GROW）与商业信用显著
+               正相关，说明银行长期贷款较多的企业和固定资产比例较高的企业商业信用较低，而第一大股东持股比例较高的企业和主营业务收入增长率较高的企业能够得到更多的
+               商业信用。
+               综上，在控制相关因素后，业绩冲击与商业信用之间呈显著负相关关系，说明受业绩冲击影响的企业，商业信用规模出现下降。该结果支持了假设 1。</p>
+         </div>
+         <div>
+            <head>六、进一步研究</head>
+            <p>如前所述，集团内部业绩冲击会对集团其他成员企业的商业信用带来显著负面影响， 而集团内部对于业绩下滑企业的交叉补贴行为，以及集团内企业业绩大幅下滑引起的
+               负面信息传染，可能是导致这一结果的主要机制。基于此，本文进一步分析业绩冲击影响商业信用的内在机理，即业绩冲击是否通过交叉补贴行为和负面信息传染渠道影
+               响了企业能够获得的商业信用规模。</p>
+            <p>（一）交叉补贴传导机制
+               当集团内某一企业出现业绩大幅下滑时，一些企业集团为保证整个集团的经营稳定性，会对业绩大幅下滑企业进行救济（黄俊等，2013），集团内部资金从业绩相对较好
+               的成员企业流入业绩相对较差的成员企业，产生交叉补贴行为。关联交易是控股股东实现企业间利益流动的重要方式（佟岩和程小可；2007），因而集团内部的交叉补贴
+               行为更多可能是通过关联交易的形式实现。据统计，在本文 4 834 个公司—年度样本中，有 3 892 个公司—年度样本存在关联商业信用，可见集团通过关联交易的方式
+               给予上市公司关联商业信用是上市公司获取商业信用的重要途径。因此，当企业集团对业绩大幅下滑企业进行救济时，可能导致集团其他上市公司从集团获得的支持减
+               少，进而表现为受业绩冲击影响企业获得的关联商业信用降低。为检验交叉补贴传导机制是否存在，本文定义关联商业信用（RTC）为上市公司从关联方获取的应付账
+               款、应付票据与预收账款之和除以总资产。我们将关联商业信用作为被解释变量，进行回归分析。表 4 报告了使用关联商业信用作为被解释变量的回归结果，POST 的
+               系数为-0.000，且并不显著，实证结果表明，业绩冲击对关联商业信用不存在显著影响，即业绩冲击并不是通过集团交叉补贴行为影响了其他成员企业的商业信用规模。
+               <note xml:id="table4">表 4	业绩冲击与关联商业信用</note></p>
+            <p>（二）负面信息传染渠道
+               前文证实，业绩冲击并未对受影响企业获得的关联商业信用产生显著负面影响，业绩冲击不是通过集团交叉补贴行为影响了其他成员企业的商业信用规模。我们接下来检
+               验负面信息传染渠道是否是业绩冲击降低集团内其他成员企业商业信用规模的影响机制。由于集团内部不同企业之间，以及供应链上下游企业之间存在紧密联系，集团内
+               某一企业业绩大幅下滑的负面消息，比较容易引起其他利益相关者对于企业集团内其他成员企业经营状况的担忧。这些成员企业的供应商和客户作为重要的利益相关者，
+               很可能会由于这种担忧而压缩对企业的商业信用规模。基于此，本文定义非关联商业信用（NRTC）为商业信用与关联商业信用的差值，将非关联商业信用作为被解释变
+               量进行回归分析。表 5 报告了使用非关联商业信用作为被解释变量的回归结果，POST 系数为-0.013，在 1%的水平上显著为负，实证结果表明，外界供应商和客户压缩
+               了受影响企业的商业信用规模。这一结果说明，业绩冲击通过负面信息传染渠道影响了集团内其他成员企业的商业信用规模。
+               <note xml:id="table5">表 5	业绩冲击与非关联商业信用</note></p>
+         </div>
+         <div>
+            <head>七、稳健性测试</head>
+            <p>（一）内生性问题
+               由于受业绩冲击影响企业与未受影响企业之间在商业信用上的差异既有可能是由业绩冲击导致的，也有可能是由企业自身其他因素导致的，为排除后者的影响，本文采用
+               PSM 方法，在受业绩冲击影响的集团成员企业（实验组）和未受业绩冲击影响的集团成员企业（控制组）之间进行比较。我们首先使用 Probit 模型计算倾向得分，并按
+               最近相邻法构建控制组，为同时保证配对后的样本数量和配对效果，本文按 1︰1 的比例进行配对。Probit 模型中的被解释变量定义与前文业绩冲击（POST）保持一致，
+               解释变量包含模型（1）中全部控制变量。为保证实验组和控制组中的企业是充分相似的，本文要求实验组企业与其相匹配的控制组企业之间倾向得分的差值的绝对值不
+               超过 0.001。</p>
+            <p>表 6 中 Panel A 报告了配对后公司特征变量的描述性统计结果，公司特征变量在配对后均不存在显著差异，可见配对效果较好。表 6 中 Panel B 报告了 PSM 配对后
+               的回归结果。回归（1）中，POST 系数为-0.013，在 10%的水平上显著，表明在使用 PSM 方法一定程度上缓解了内生性问题之后，业绩冲击与企业的商业信用规模仍然
+               存在显著负相关关系。
+               <note xml:id="table6">表 6	业绩冲击的 PSM 配对分析结果</note></p>
+            <p>（二）业绩冲击的界定
+               在前文研究中，本文定义每一年度存在业绩下滑的企业中业绩下降幅度最大的前 30% 分位数企业为发生了业绩大幅下滑的企业。为测试变量的敏感性，本文对这一比例
+               进行调整，在存在业绩下滑的企业中，同时选取业绩下降幅度最大的前 20%分位数和前 40%分位数企业作为发生业绩大幅下滑的企业，重新定义了受业绩冲击影响的企
+               业样本并进行回归分析，结果如表 7 所示。在回归（1）至回归（4）中，POST 系数分别为-0.012、-0.014、-0.010 和-0.014，分别在 5%、1%、5%和 1%的水平上显著。
+               这说明即使我们改变了业绩冲击的界定标准，实证结果仍然稳健。
+               <note xml:id="table7">表 7   不同业绩冲击定义标准的回归结果</note></p>
+            <p>（三）其他稳健性检验方法①
+               为使研究结论更加可靠，我们还使用了其他稳健性检验方法，具体包括：（1）使用其他方法度量企业获得的商业信用。（2）剔除了受业绩冲击影响且在上一年度存在业
+               绩下滑的观测值样本，以排除企业自身业绩变动干扰。（3）将商业信用划分为从供应商处获得的商业信用和从客户处获得的商业信用。（ 4 ）进一步控制了上市企业的
+               业务集中度（INCOMEFOCUS）、供应商集中度（SUPFOCUS）和客户集中度（CUSFOCUS），并且同时在集团控股上市公司层面和公司层面进行了聚类处理。上述检验结果与本
+               文研究结论一致，说明本文研究结论是稳健的。</p>
+         </div>
+         <div>
+            <head>八、研究结论</head>
+            <p>本文基于 2007—2015 年中国 A 股上市公司中隶属于同一企业集团的上市公司相关数据，研究负面业绩冲击是否影响企业获得的商业信用。研究发现：（1）业绩冲击与
+               集团内其他成员企业的商业信用之间显著负相关。当集团内部某一企业出现业绩大幅下滑后，在下一年度，集团内其他成员企业的商业信用要显著低于其他未发生业绩冲
+               击的集团成员企业。（2）从传导机制上来看，业绩冲击通过负面信息传染渠道，影响了集团内其他成员企业的商业信用规模。</p>
+            <p>本文对于企业集团相关研究具有一定的启示意义。本文既加深了我们对企业集团这一重要经济组织的理解，又有助于企业集团准确意识到某一成员企业业绩大幅下滑所带
+               来的负面影响。同时，本文的结论有助于企业集团正确认识到集团内负面信息传染产生的经济后果，有助于企业集团对成员企业业绩下滑做出正确应对，避免单一企业业
+               绩下滑对企业集团整体产生更大的负面冲击。但本文仍存在一定的不足，受到数据来源影响，本文研究样本只包含企业集团的上市公司部分。因此，如何更加全面地分析
+               集团成员企业间的相互影响，在未来值得进一步探究。</p>
+         </div>
+      </body>
+      <back>
+         <div type="bibliography">
+            <listBibl>
+               <bibl>
+                  参考文献:
+                  1 邓路、曲悠:《货币政策、商业信用与公司业绩增长》[J],《财务研究》2016年第2期,第68—79页.
+                  2 黄俊、陈信元、张天舒:《公司经营绩效传染效应的研究》[J],《管理世界》2013年第3期,第111—118页.
+                  3 刘欢、邓路、廖明情:《公司的市场地位会影响商业信用规模吗?》[J],《系统工程理论与实践》2015年第12期,第3119—3134页.
+                  4 陆正飞、杨德明:《商业信用:替代性融资,还是买方市场?》[J],《管理世界》2011年第4期,第6—14页.
+                  5 纳鹏杰、雨田木子、纳超洪:《企业集团风险传染效应研究——来自集团控股上市公司的经验证据》[J],《会计研究》2017年第3期,第53—60页.
+                  6 饶品贵、姜国华:《货币政策对银行信贷与商业信用互动关系影响研究》[J],《经济研究》2013年第1期,第68—82页.
+                  7 佟岩、程小可:《关联交易利益流向与中国上市公司盈余质量》[J],《管理世界》2007年第11期,第127—138页.
+                  8 王化成、刘金钊、孙昌玲、高升好:《基于价值网环境的财务管理:案例解构与研究展望》[J],《会计研究》2017年第7期,第11—19页.
+                  9 王雄元、高曦:《客户盈余公告对供应商具有传染效应吗?》[J],《中南财经政法大学学报》2017年第3期,第3—13页.
+                  10 王彦超、林斌:《金融中介、非正规金融与现金价值》[J],《金融研究》2008年第3期,第177—199页.
+                  11 杨棉之、孙健、卢闯:《企业集团内部资本市场的存在性与效率性》[J],《会计研究》2010年第4期,第50—56页.
+                  12 张新民、王珏、祝继高:《市场地位、商业信用与企业经营性融资》[J],《会计研究》2012年第8期,第58—65页.
+                  13 郑军、林钟高、彭琳:《高质量的内部控制能增加商业信用融资吗?——基于货币政策变更视角的检验》[J],《会计研究》2013年第6期,第62—68页.
+                  14 Bae G.S., Cheon Y.S., Kang J.K., 2008, “Intragroup Propping: Evidence from the Stock-Price Effects of Earnings Announcements by Korean Business Groups”[J], The Review of Financial Studies, Vol.21, No.5: 2015-2060.
+                  15 Biais B., Gollier C., 1997, “Trade Credit and Credit Rationing”[J], Review of Financial Studies, Vol.10, No.4: 903-937.
+                  16 Buchuk D., Larrain B., Muñoz F., Francisco U.I., 2014, “The Internal Capital Markets of Business Groups: Evidence from Intra-Group Loans”[J], Journal of Financial Economics, Vol.112, No.2: 190-212.
+                  17 Casey E., O'Toole C.M., 2014, “Bank Lending Constraints, Trade Credit and Alternative Financing During the Financial Crisis: Evidence from European SMEs”[J], Journal of Corporate Finance, Vol.27: 173-193.
+                  18 Dai B., Yang F., 2015, “Monetary Policy, Accounting Conservatism and Trade Credit”[J], China Journal of Accounting Research, Vol.8, No.4: 295-313.
+                  19 Fabbri D., Klapper L.F., 2016, “Bargaining Power and Trade Credit”[J], Journal of Corporate Finance, Vol.41, No.12: 66-80.
+                  20 Fabbri D., Menichini A.M.C., 2010, “Trade Credit, Collateral Liquidation, and Borrowing Constraints”[J], Journal of Financial Economics, Vol.96, No.3: 413-432.
+                  21 Ge Y., Qiu J., 2007, “Financial Development, Bank Discrimination and Trade Credit”[J], Journal of Banking &amp; Finance, Vol.31, No.2: 513-530.
+                  22 Giannetti M., Burkart M., Ellingsen T., 2011, “What You Sell is What You Lend? Explaining Trade Credit Contracts”[J], Review of Financial Studies, Vol.24, No.4: 1261-1298.
+                  23 Granovetter M.,1994, “Business Groups”[J], The Handbook of Economic Sociology, 453-475.
+                  24 Jorion P., Zhang G., 2009, “Credit Contagion from Counterparty Risk”[J], The Journal of Finance, Vol.64, No.5: 2053-2087.
+                  25 Klapper L., Laeven L., Rajan R., 2012, “Trade Credit Contracts”[J], Review of Financial Studies, Vol.25, No.3: 838-867.
+                  26 La Porta R., Lopez-de-Silanes F., Zamarripa G., 2003, “Related Lending”[J], The Quarterly Journal of Economics, Vol.118, No.1: 231-268.
+                  27 Maksimovic V., Demirgüçkunt A., 2001, “Firms as Financial Intermediaries: Evidence from Trade Credit Data” [D], Policy Research Working Paper.
+                  28 1.Mateut S., Bougheas S., Mizen P., 2006, “Trade Credit, Bank Lending and Monetary Policy Transmission”[J], European Economic Review, Vol.50, No.3: 603-629.
+                  29 2.Mitton, T., 2002, “A Cross-Firm Analysis of the Impact of Corporate Governance on the East Asian Financial Crisis”[J], Journal of Financial Economics, Vol.64, No.2: 215-241.
+                  30 3.Petersen M.A., Rajan R.G., 1997, “Trade Credit: Theories and Evidence”[J], Review of Financial Studies, Vol.10, No.3: 661-691.
+                  31 4.Shin H.H., Stulz R.M., 1998, “Are Internal Capital Markets Efficient?”[J], The Quarterly Journal of Economics, Vol.113, No.2: 531-552.
+                  32 5.Stein, J.C., 2002, “Information Production and Capital Allocation: Decentralized versus Hierarchical Firms”[J], The Journal of Finance, Vol.57, No.5: 1891-1921.
+                  33 6.Stein, J.C., 1997, “Internal Capital Markets and the Competition for Corporate Resources”[J], The Journal of Finance, Vol.52, No.1: 111-133.
+                  34 7.Stiglitz J.E., Weiss A., 1981, “Credit Rationing in Markets with Imperfect Information”[J], American Economic Review, Vol.71, No.3: 393-410.
+                  35 8.Yang, X., 2011, “Trade Credit Versus Bank Credit: Evidence from Corporate Inventory Financing”[J], Quarterly Review of Economics &amp; Finance, Vol.51, No.4: 419-434.
+               </bibl>
+            </listBibl>
+         </div>
+         <titleStmt xml:lang="en"> 
+            <title type="main">
+               Performance Shock and Trade Credit: Empirical Evidences from Group Controlled Listed Companies
+            </title>
+            <author>
+               <name>
+                  <surname>Zhang</surname>
+                  <forename>Xiuping</forename>
+               </name>
+               <affiliation>
+                  <orgName>School of Banking &amp; Finance, University of International Business and Economics</orgName>
+               </affiliation>
+            </author>
+            <author>
+               <name>
+                  <surname>Gao</surname>
+                  <forename>Peng</forename>
+               </name>
+               <affiliation>
+                  <orgName>Accounting School, Chongqing University of Technology</orgName>
+               </affiliation>
+            </author>
+            <author>
+               <name>
+                  <surname>Wang</surname>
+                  <forename>Huacheng</forename>
+               </name>
+               <affiliation>
+                  <orgName>School of Business, Renmin University of China</orgName>
+               </affiliation>
+            </author>
+         </titleStmt>
+         <profileDesc xml:lang="en">
+            <abstract>
+               <p>Abstract：Based on the data of group controlled listed companies from 2007 to 2015, this paper studies the impact of negative performance shock 
+                  on the trade credit of listed companies within the same group. This paper finds that when a member of one group experience a significant 
+                  performance decline, the negative performance shock will reduce the trade credit scale obtained by other listed companies within the same group. 
+                  We further find that the performance shock does not have significant negative influence on the intra-group trade credit, and that the performance
+                  shock has significantly negative influence on extra-group trade credit. The results show that the performance shock influences trade credit
+                  through the negative information contagion channel. The results of this paper enrich the business group literature, and reveal the important
+                  mechanism of the intra-group performance contagion effect.</p>
+            </abstract>
+            <textClass>
+               <keywords>
+                  <term>Business group</term>
+                  <term>Performance shock</term>
+                  <term>Trade credit</term>
+                  <term>Negative information</term>
+               </keywords>
+               <classCode scheme="https://www.aeaweb.org/econlit/jelCodes.php">JEL Classification: G32</classCode>
+            </textClass>
+         </profileDesc>
+      </back>
+   </text>
+</TEI>

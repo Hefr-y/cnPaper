@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt xml:lang="cn"> 
+            <title type="main">
+               婚姻市场正向匹配如何影响代际流动？*
+               <note n="*" place="foot">
+                  感谢教育部人文社会科学西部青年基金项目（编号：16XJC790006）、国家自然科学基金项目（编号： 71773095）和西南财经大学中央高校基本科研业务费专
+                  项资金创新团队项目（编号：JBK1707052）的资助。文责自负。
+               </note>
+            </title>
+            <!-- author information in separate <author> elements per author -->
+            <author>
+               <name>
+                  <surname>许</surname>
+                  <forename>志</forename>
+               </name>
+               <affiliation>
+                  <orgName>西南财经大学金融学院</orgName>
+                  <rs type="city">四川成都</rs>
+                  <rs type="postcode">611130</rs>
+               </affiliation>
+            </author>
+            <author>
+               <name>
+                  <surname>刘</surname>
+                  <forename>文翰</forename>
+               </name>
+               <affiliation>
+                  <orgName>西南财经大学经济与管理研究院</orgName>
+                  <rs type="city">四川成都</rs>
+                  <rs type="postcode">611130</rs>
+               </affiliation>
+            </author>
+            <author>
+               <name>
+                  <surname>徐</surname>
+                  <forename>舒</forename>
+               </name>
+               <affiliation>
+                  <orgName>西南财经大学经济学院</orgName>
+                  <rs type="city">四川成都</rs>
+                  <rs type="postcode">611130</rs>
+               </affiliation>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>北京大学图书馆</publisher>
+            <date>2019-10-20</date>
+            <idno type="doi" xml:base="https://doi.org/">10.12088/PKU.jjkx.2019.05.08</idno>
+            <idno type="北大经济科学期刊" xml:base="http://ccj.pku.edu.cn/jjkx/CN/article/showTenYearOldVolumn.do">2019, Vol. 41(5): 93-103</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <p xml:base="http://www.oaj.pku.edu.cn/">北京大学期刊网</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc xml:lang="cn">
+         <abstract>
+            <p>摘要: 本文构建了包含代际收入弹性与父母婚姻市场正向匹配程度的理论模型,表明了婚姻市场正向匹配对代际收入弹性的正向影响。基于CHNS数据,我们使用Copula函数
+               构造了父母婚姻市场正向匹配程度与代际收入弹性的异质性指标,实证检验了模型推论。结果显示,父母间的正向匹配程度每增加0.1,代际收入弹性相应提高0.012,子代绝
+               对流动提高0.036。教育回报率与父母对子女人力资本投入的边际收益率均强化了父母婚姻市场正向匹配程度对代际收入弹性的影响。</p>
+         </abstract>
+         <textClass>
+            <keywords>
+               <term>婚姻市场</term>
+               <term>正向匹配</term>
+               <term>代际流动</term>
+            </keywords>
+            <classCode scheme="http://www.ztflh.com/">中图分类号：F062.6</classCode>
+            <classCode scheme="https://www.aeaweb.org/econlit/jelCodes.php">JEL分类号：J12   J62</classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change><!-- Description of a change to the article; using @who and @when. --></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="引言" xml:id="introduction">
+            <head>一、引言</head>
+            <p>代际流动作为衡量社会公平的重要指标，反映的是子代相对于父代社会地位的变动情况。代际收入弹性作为社会长期公平情况的测度，对社会的收入分配以及人力资本积
+               累等都有至关重要的影响。早期文献对代际流动的研究主要集中在流动性指标的准确测算和统计特征描述上（Solon，1992；Baker 和 Solon，2003）。近年来，随着数
+               据的丰富和研究的深入，更多文献开始关注影响代际流动的经济社会因素。既有研究表明，公共教育（Ichino 等，2011；杨娟等，2015）、信贷约束（Mazumder，2005）
+               、社区环境（Chetty 等，2016），以及家庭结构的稳定性（Chetty 等，2014b）等都会对社会的代际流动产生重要影响。</p>
+            <p>本文从父辈婚姻市场正向匹配（assortative mating）的角度，讨论该特征对代际流动的影响。文章的主要贡献体现在两个方面：一是在实证方法上，本文基于条件
+               Copula 函数， 将个体异质性引入代际收入弹性和婚姻市场正向匹配的测算中。同时，利用 Copula 函数的性质，将传统代际流动指标和 Chetty 等（2017）提出的绝对
+               收入流动指标结合起来，极大丰富了对代际流动指标的刻画。二是发现父母婚姻市场的正向匹配程度与代际收入弹性间存在正相关关系，并且识别出影响该正相关关系
+               的两个重要因素：子代教育回报率和父母对子女人力资本积累的边际投资回报。</p>
+            <p>我们的研究结果表明，在考虑了由测量误差等引起的内生性后，父母间婚姻市场的正向匹配程度每增加 0.1，代际收入弹性相应提高 0.012，子代向上流动的
+               概率（绝对收入流动指标）相应提高 0.036，但后者并不稳健。此外，我们还通过数据对理论模型的两个推论进行验证，表明了理论模型与现实数据的契合。</p>
+            <p>文章剩余部分安排如下：第二部分对相关文献进行梳理；第三部分构建了包含婚姻市场正向匹配程度与代际收入弹性的理论模型，并推导出了本文的基本命题和推论；
+               第四部分对数据进行描述统计，并就 Copula 函数进行了简单的介绍；第五和第六部分对理论模型推导出的命题与推论进行了实证检验；最后对文章进行总结。</p>
+         </div>
+      </front>
+      <body>
+         <div>
+            <head>二、文献综述</head>
+            <p>代际流动的研究始于 Becker 和 Tomes（1979）。目前，研究代际流动的文献分为两类：其一，测算代际收入弹性；其二，讨论代际流动的影响机制。对于代际收入弹性
+               的测算， 最为经典的方法是用对数子代永久收入对对数父代永久收入（log-log）回归（Solon，1999）。而由于短期收入波动以及生命周期问题，测算出的代际收入弹
+               性往往存在测量误差（Solon， 1992）。而现有文献为了减小测量误差，主要采用两种方法推断永久收入：第一，使用特定年龄的收入作为近似；第二，对多期收入取平
+               均（Mazumder，2005；Baker 和 Solon， 2003；Haider 和 Solon，2006）。而使用收入的百分等级（rank-rank）代替对数收入还能克服 log-log 方法的不稳定性问题
+               （Chetty 等，2014a，2014b）。此外，现有研究充分刻画了该指标在时间维度上的变化趋势。例如，陈琳和袁志刚（2012）认为在 1988—2005 年间，我国代际收入弹
+               性呈现大幅下降并逐渐稳定的趋势。何石军和黄桂田（2013）指出 2004—2006年我国代际收入弹性基本呈下降趋势，而 2006—2009 年则出现反弹。</p>
+            <p>除了代际收入弹性的测算，学者同样致力于打开代际流动影响机制的黑匣子。Becker 和 Tomes（1979）以及 Solon（1999）等文献指出，遗传、人力资本积累以及人力
+               资本回报等差异是造成不同空间和时间维度上代际收入弹性出现差异化的重要原因。而郭丛斌和闵维方（2009）认为子女地位更多取决于子女受教育程度这一后天因素，
+               并且教育对代际流动的促进作用强于先天因素。Ichino 等（2011）用代际收入弹性对公共支出进行回归， 发现其系数为－0.54，而如果改用初等教育支出，回归系数更
+               加显著。杨娟等（2015）也发现增加义务教育支出可以通过弥补家庭预算约束，进而提高代际收入的流动性。此外， 种族隔离、社会不平等程度、初等教育质量、社会
+               资本情况以及家庭结构的稳定性等因素均与代际流动显著相关（Chetty 等，2014b，2017）。</p>
+            <p>从研究问题的切入视角上看，一部分文章也同样考虑了父母婚姻市场正向匹配与代际流动的关系，抑或是代际流动与自身婚姻状况的关系（Ermisch 等，2006；Handy，2014；
+               Holmlund，2008）。其中，Handy（2014）发现由于父母间极强的人力资本相关性，正向匹配对代际流动有着显著的影响，近 25%的代际收入弹性可由其解释。</p>
+            <p>与上述文献不同，本文利用 Copula 函数构造了更为一般化的代际流动和婚姻市场正向匹配指标，既考虑了上述指标的个体异质性，还在一个统一框架下研究婚姻市场正
+               向匹配对代际收入弹性以及绝对收入流动性的非对称影响。此外，本文也是首次针对中国数据在该问题上进行了系统的研究，是对现有文献的有益补充。</p>
+         </div>
+         <div>
+            <head>三、 理论模型</head>
+            <p>本文假定一个典型家庭由父亲（f）、母亲（m）以及子女（c）构成。家庭中每个成员的对数收入（y）是其人力资本（h）的线性函数，具体表示为
+               <note xml:id="latex1">LaTeX数学公式</note>
+               其中， 表示人力资本边际收益。基于 Ermisch 等（2006）以及 Handy（2014）等的设定， 我们假定母亲的人力资本是父亲人力资本的线性函数 。因此，可以得
+               到父母间收入的正向匹配程度，或者是父母间收入的相关性：
+               <note xml:id="latex2">LaTeX数学公式</note>
+               同时，基于 Becker 和 Tomes（1979），假定子女的人力资本积累方程由人力资本投资决定： 其中，表示父母对子女人力资本投资的边际收益。根据 Solon
+               （1999）等对代际收入弹性的定义 IGE ，可以计算出代际收入弹性：
+               <note xml:id="latex3">LaTeX数学公式</note>
+               通过代际收入弹性对父母收入的正向匹配程度求导，则可以求得婚姻市场的正向匹配对代际流动的影响：
+               <note xml:id="latex4">LaTeX数学公式</note>
+               由式（4）可得出本文需要验证的基础理论命题。
+               命题：代际收入弹性与父母的正向匹配程度存在正相关关系。
+               基于上述命题，将 分别对c 和 y  求导，可以得到本文的两个推论
+               推论 1：子女人力资本回报率越高，父母间正向匹配程度对代际收入弹性的影响越大。推论 2：父母对子女的人力资本投资边际收益越大，父母间正向匹配程度对代际收入
+               弹性的影响越大。</p>
+         </div>
+         <div>
+            <head>四、数据与计量方法</head>
+            <p>（一）数据选取
+               本文使用 CHNS 1991 年至 2011 年的数据，并将收入以 2009 年为基期进行 CPI 调整。我们保留年龄在 16 至 65 岁之间的样本，并对异常样本进行了剔除。另外，
+               母亲的样本选择会带来收入的内生性问题，使得工资数据出现偏差，进而影响对父母正向匹配程度的计算。鉴于此，本文使用 Heckman 两步法，并对母亲的工资数据进
+               行调整，并控制了年龄及其平方项、受教育程度、省份及是否是城镇居民的虚拟变量，还包括城镇化指数、健康质量得分、住房质量得分、市场得分、公共服务得分以及
+               教育状况得分等社区特征变量。排他变量为家庭中是否有 16 岁以下的小孩。①此外，为了有效解决由测量误差带来的内生性问题，本文对同一家庭在不同年份上的观测
+               值进行平均化处理。但是绝大部分家庭仅有一年或者两年的观测值。因此，计算出的代际收入弹性仍然存在测量误差。</p>
+            <p>（二）指标构造
+               Copula 函数刻画的是两个边际分布间的相关性，能够避免数据中异常值的影响。因此， 具有良好的稳健性。根据 Genest 等（2009）的拟合优度检验结果，我们使用
+               Frank Copula来刻画本文收入边际分布的相关性。二元 Frank Copula 的密度函数为：
+               <note xml:id="latex5">LaTeX数学公式</note>
+               其中，v∈(0,1)是子辈收入的边际分布函数，u∈(0,1)是父辈收入的边际分布函数，θ 是Copula 函数中的未知参数，其与 Kendall’s tau 相关系数间的关系可以
+               由以下等式表达：
+               <note xml:id="latex6">LaTeX数学公式</note>
+               tau 相关系数就是本文使用的代际收入流动性和父母婚姻市场匹配程度的测度。进一步将参数 表示成一系列个体可观测变量的函数，即 i = Zi ，这意味着通
+               过对参数 的估计， 我们可以针对每个家庭计算出其特定的代际收入流动性指标 IGEi =  i。采用相同的方法， 可以计算出父母的收入相关指标，即正向匹配指标 Matchingi。
+               利用 Copula 函数的性质，我们还可以进一步得到 Chetty 等（2017）定义的绝对流动性指标。绝对流动性定义为“给定父辈收入水平，子辈收入水平大于父辈收入水
+               平的概率”，该收入水平指的是样本中收入的秩排序情况，即
+               <note xml:id="latex7">LaTeX数学公式</note></p>
+            <p>（三）参数估计
+               我们使用极大似然估计来估计 Frank Copula 中的参数，具体步骤如下：
+               （1）	对父辈和子辈的对数收入拟合如下线性回归方程，估计出父亲、母亲以及子女对数收入的残差：
+               <note xml:id="latex8">LaTeX数学公式</note>
+               其中，控制变量 X 包括年龄及其平方项、受教育程度、省份和是否是城镇居民的虚拟变量， 以及社区特征变量。
+               （2）	计算 g 的经验分布函数，以及 。
+               （3）	将上述经验分布函数代入 Copula 函数进行极大似然估计，得到参数 的估计值ˆ ，并计算 θi = Zi ˆ 。其中，变量 Zi 包括父亲和母亲（子女）对数收入及其
+               平方项，以及两者在回归方程（8）中的控制变量。
+               （4）	基于等式（6）和等式（7）构建代际收入流动性及夫妻收入正向匹配指标。</p>
+            <p>（四）描述统计
+               如表 1 所示，本文以 Frank Copula 函数计算出来的代际收入弹性和父母正向匹配程度分别等于 0.24、0.32。①就代际收入弹性而言，本文测算出来的结果偏小。实际
+               上，这主要是由于本文在计算代际收入弹性时加入了更多控制变量。本文使用 log-log 和 rank-rank 方法计算代际收入弹性时，如果仅控制两代年龄及其平方项，代
+               际收入弹性等于 0.52 和 0.51， 该结果与现有研究的结论比较一致。而如果再控制两代受教育程度、部分社区特征变量、是否是城镇居民以及省份虚拟变量后，我们发
+               现算出来的结果为 0.34 和 0.33。
+               <note xml:id="table1">表 1	代际收入弹性和父母正向匹配程度</note>
+               <note n="①" place="foot">剔除代际收入弹性小于零的样本后，并不影响主要结论。因篇幅所限，本文省略了描述性统计结果， 感兴趣的读者可在《经济科学》官网论
+                  文页面“附录与扩展”栏目下载。</note></p>
+            <p>除了代际收入弹性，绝对流动性指标也是度量代际流动的重要指标（Chetty 等，2014b， 2017）。根据公式（7），我们计算出个体层面的绝对流动性指标，即子代相对
+               于父代收入向上流动的情况。表 2 给出了子代收入绝对流动以及母亲收入高于父亲概率的平均值。结果显示，随着父代收入排名的提高，子代绝对流动与母亲收入高于
+               父亲的概率逐渐减小。但是，在父辈收入最低的 25%群体中，仍然有 30.1%的子代无法跳出代际贫困陷阱，该部分子女依然处于较低收入水平。该数值在父辈收入排名 
+               25%—50%的群体中为 45.9%。这意味着在这类家庭中有将近一半的子代无法向上流动，显示出很强的代际收入“粘性”。
+               <note xml:id="table2">表 2	绝对流动与母亲收入高于父亲的概率</note></p>
+         </div>
+         <div>
+            <head>五、回归结果</head>
+            <p>（一）回归方程
+               本文采用如下回归方程研究婚姻市场正向匹配对代际流动的影响
+               <note xml:id="latex9">LaTeX数学公式</note>
+               其中，IGE 表示家庭 j 的代际收入弹性，Matching 则表示该家庭父母收入的相关系数，  则为我们所关心的父母正向匹配程度对代际收入弹性的影响。而 Xj 表示控
+               制变量，包括社区层面的控制变量，以及该家庭是否是城镇居民和省份的虚拟变量。在上述回归中，我们没有加入个体层面的控制变量，其原因是在利用 Copula 函数计
+               算 IGE 及 Matching 指标的过程中，我们已经通过回归排除了个体特征的影响。</p>
+            <p>（二）基本回归结果
+               表 3 中给出了父母正向匹配程度对代际收入弹性影响的回归结果。列（1）显示父母间的正向匹配程度与代际收入弹性显著正相关。由于地区教育等因素均与代际收入弹
+               性显著相关（Chetty  等，2014b；Solon，1999），因此，我们在列（2）中加入社区特征变量。除此之外，我国城乡间的代际收入弹性也存在一定差异（陈琳和袁志刚，
+               2012），因而我们在列（3）中引入城镇虚拟变量。从表 3 的列（1）至列（3）可以看出，在不同设定下， 父母间正向匹配程度与代际收入弹性呈显著正相关关系，这不
+               仅与本文理论部分的命题相一致，也与现有研究结果（Handy，2014；Holmlund，2008）相一致。从具体数值上来看， 父母间正向匹配程度每增加 1 个百分点，代际收入
+               弹性增加约 0.04 个百分点。
+               <note xml:id="table3">表 3	父母正向匹配对代际流动的影响</note></p>
+            <p>就上述结果而言，OLS 回归还存在内生性问题。在本文的实证环境下，关注变量的测量误差是引起内生性的主要原因。理论上，代际流动性的构建以及父母间收入正向匹
+               配程度的计算，都是建立在持久收入的基础上。由于因变量的测量误差不会对估计结果造成影响，因此我们的估计偏误主要由父母正向匹配程度的测量误差引起。由于测
+               量误差引起的内生性会使得回归结果存在衰减偏误，所以 OLS 估计得到的系数比真实系数更小。</p>
+            <p>我们使用两阶段最小二乘来解决内生性问题。工具变量的构造方法如下：使用母亲样本拟合等式的回归，获得母亲对数收入的预测值。并按省份分组，使用该预测值减去
+               相邻十岁范围内的母亲对数收入预测值的平均数，并以此作为工具变量。采用该工具变量进行两阶段最小二乘估计的结果如表 3 第（4）列所示。结果显示，父母正向匹
+               配程度每增加 1个百分点，代际收入弹性相应增加 0.117 个百分点。不难发现，此时，两阶段最小二乘的估计系数明显大于普通最小二乘的估计系数，符合测量误差引起
+               参数估计衰减偏误的结论。</p>
+            <p>Chiappori 等（2009）等研究均指出女性存在向上匹配倾向，而男性存在向下匹配倾向。Bertrand 等（2015）发现社会上存在广泛的性别认同，即家庭中妻子的收入一般
+               低于丈夫。而当妻子的潜在收入高于丈夫时，妻子会通过减少劳动力供给使得收入降低。因此，对于高收入女性来说，其更倾向于匹配高收入男性，而不会匹配低收入男
+               性，而低收入女性既可能匹配低收入男性也可能匹配高收入男性。总的来说，对于高收入女性，婚姻市场的正向匹配程度可能更高。本文 2SLS 的第一阶段回归结果如列
+               （5）所示，我们发现工具变量与正向匹配程度显著正相关，与预期一致。</p>
+            <p>在表 4 中，我们考察了父母正向匹配对子辈绝对收入流动性的影响。由于绝对代际流动性是基于父辈收入分布计算的相对指标，因此在回归中我们也控制了父辈的收入分
+               布。在工具变量的构造上，我们采用与表 3 相同的方法。结果显示，父母的正向匹配程度每增加 1 个百分点，子代的绝对流动性增加 0.1 个百分点，但是该结果并不显
+               著。此外，2SLS 系数为 0.356，并在 95%置信水平下显著。但是弱工具变量检验的 F 值较大，为 257.4。因此，我们认为父母间的正向匹配程度对子代绝对流动性的影
+               响系数在 0.1 至 0.356 之间。
+               <note xml:id="table4">表 4	父母正向匹配对代际绝对流动性的影响</note></p>
+            <p>（三）经济机制检验
+               1.	子代教育回报的影响
+               推论 1 表明子女教育回报率越高，父母间正向匹配程度对代际收入弹性的影响越大。要验证该推论，首先需要获得对子代教育回报的估计。为获得该指标的测度，我们
+               根据子代的省份、是否是城镇居民以及学历是否是高中及以上，分组拟合如下回归方程：
+               <note xml:id="latex10">LaTeX数学公式</note>
+               其中，系数 为子代教育回报，关注变量 education 采用的是子代受教育年限，控制变量包括子代年龄及其平方项、性别以及社区特征变量。在获得教育回报估计的基础
+               上，我们在原有回归方程（9）中进行分组回归，结果如表 5 所示。
+               <note xml:id="table5">表 5 父母正向匹配程度对代际收入弹性的影响机制分析</note></p>
+            <p>总的来说，我们认为在高教育回报组内，正向匹配程度的系数更大，该实证结果与本文推论 1 预测的方向一致。低教育回报组内正向匹配程度系数不显著的原因，一方面
+               可能是教育回报在样本中的变异性不足；另一方面，采用教育回报率作为模型中人力资本回报率的代理变量存在一定偏差。此外，我们还将被解释变量替换为子代绝对流
+               动性指标。结果显示低教育回报组的回归系数比高教育回报组更大，但是难以判断两组间系数的差异是否显著。</p>
+            <p>2.	父母对子女的人力资本投资回报的影响
+               验证推论 2 的处理过程与验证推论 1 的过程类似，我们首先根据子代的省份、是否是城镇居民以及学历是否是高中及以上，分组计算父母对子女人力资本的投资回报率：
+               <note xml:id="latex11">LaTeX数学公式</note></p>
+            <p>其中，education  是子女的受教育年限， 1 和 2 分别为父亲以及母亲对子女的人力资本投资回报，控制变量 X  包括子女性别与社区变量。①不可否认，本文对父
+               母对子女的人力资本投资边际回报的测度存在一定误差。主要是由于人力资本积累在进入劳动力市场之前已基本完成（Chetty 等，2014b；Neal 和 Johonson，1996）。
+               而在子女人力资本积累的关键时期，除了受到家庭人力资本投资的影响外，还受到大量其他因素的影响（Bursztyn 和 Jensen， 2015；Chetty  等，2016）。由于数据所
+               限，回归方程（11）并未将以上因素纳入。因此，本文在对回归方程（11）进行普通最小二乘估计时，所得到的回归系数1  和 2  只能看作是理论模型中父母对子
+               女人力资本投资的边际回报率的代理变量（proxy variable）。根据子女的人力资本积累方程，假设1    2 。表 6 给出了本文所关注的回归结果。结果显示，在
+               低投资回报组内，正向匹配程度对代际收入弹性的回归系数为 0.014，小于高投资回报组的系数 0.065。此外，在两阶段最小二乘中，高投资回报组的系数为 0.189，并
+               在 95%的置信水平下显著，此系数大于低投资回报组的 0.050。该结果与理论模型推导出的推论 2 基本一致。我们同样将被解释变量替换为子代绝对流动性指标，发现在
+               高投资回报组中，正向匹配程度对子代绝对流动性的影响更大。
+               <note xml:id="table6">表 6	人力资本投资边际收益对代际收入弹性的影响机制分析</note>
+               <note n="①" place="foot">控制子代年龄及平方项后，结论不发生改变。</note></p>
+         </div>
+         <div>
+            <head>六、稳健性检验</head>
+            <p>如前文所述，上述实证结果不可避免受到测量误差的影响，因此计算出的代际收入流动性以及父母间收入的正向匹配程度都相应存在偏误。尤其是后者，会进一步引起回
+               归方程的内生性问题。为了进一步验证回归结果的稳健性，我们一方面采用不同的方法构建父母婚姻市场正向匹配程度的指标，以期降低父母间正向匹配程度的内生性；
+               另一方面，我们使用教育指标替代收入指标，以降低收入测量误差的影响。</p>
+            <p>（一）分组计算正向匹配指标
+               我们分组计算组内父母间正向匹配程度，以代替单个家庭的父母正向匹配程度。借鉴代际收入弹性的估计方法，采用 log-log 和 rank-rank 方法，按父代受教育程度和
+               子女性别分组计算父母正向匹配程度。如表 7 所示，两种方法计算出的正向匹配程度与代际收入弹性之间均存在显著正相关关系，但是根据 rank-rank 方法计算出来的
+               正向匹配程度与代际收入弹性之间的关系并不显著。整体来说，表 7 的结果与本文结论基本一致。①
+               <note xml:id="table7">表 7 稳健性检验：分组计算正向匹配</note>
+               <note n="①" place="foot">① 我们删除了正向匹配程度偏差过大的样本。</note></p>
+            <p>（二）计算教育代际流动与正向匹配
+               根据 Handy（2014）的设定，我们使用受教育年限构造父母间婚姻市场正向匹配程度指标以及分省计算的教育代际流动：
+               <note xml:id="latex12">LaTeX数学公式</note></p>
+            <p>其中，k 表示受教育程度的百分等级，rho 为个体 x 和 y 的教育相关系数。rho 越大，则相关性越强。如表 8 列（1）和（2）所示。可以看出，在该设定下，父母间
+               教育的正向匹配对收入的代际流动没有显著影响，但对教育的代际流动有显著的正向影响。进一步地，我们借鉴 Eika 等（2014）的设定，在离散教育程度的数据下构造
+               两个个体间的教育相关系数：
+               <note xml:id="latex13">LaTeX数学公式</note></p>
+            <p>其中，分子为 x 和 y 的受教育程度分别等于 i 和 j 时的样本占比，分母为 x 的受教育程度等于 i 的样本占比与 y 的受教育程度等于 j 的样本占比之积。上式中分
+               母是对教育边际分布的调整，从而使得上述教育相关性测度 sij 不受样本整体教育水平变化的影响。利用上述等式，可以分省计算出父母的教育匹配程度作为父母婚姻
+               市场正向匹配程度的测度，以及父子间的教育匹配程度。如表 8 列（3）和列（4）所示，尽管父母的教育正向匹配程度对代际收入弹性的影响较弱，但对教育相关性有显
+               著的正向影响。</p>
+            <p>综合上述结果，在多种不同的婚姻市场正向匹配程度测度和代际流动性衡量指标下， 本文的命题，即父母间婚姻市场正向匹配程度与代际收入弹性的正相关关系都成立。
+               因此， 我们认为本文的研究结果基本稳健。
+               <note xml:id="table8">表 8	稳健性检验：教育正向匹配</note></p>
+         </div>
+         <div>
+            <head>七、研究结论</head>
+            <p>本文以人力资本积累为桥梁，分析了婚姻市场上的正向匹配对代际流动的影响。我们使用 CHNS 1991—2011 年的数据，实证检验了婚姻市场正向匹配程度对代际收入弹性
+               的影响。研究发现：（1）婚姻市场的正向匹配程度与代际收入弹性呈显著正相关关系。正向匹配程度每增加 0.1，代际收入弹性相应提高 0.012，子代向上流动的概率上
+               升 0.036，但后者并不稳健；（2）子女的教育回报率提高与父母对子女人力资本积累的投资边际收益增强，会强化正向匹配程度对代际收入弹性的影响。在方法论上，本
+               文引入 Copula 函数将代际收入弹性扩展到家庭层面，并将代际收入弹性与子代向上流动的概率有机结合，是对代际收入弹性相关研究的有益补充。最后，本文也是对代
+               际流动影响机制的扩展，从婚姻市场方面识别了影响代际流动的要素，有利于更全面地理解影响我国代际流动的因素。</p>
+         </div>
+      </body>
+      <back>
+         <div type="bibliography">
+            <listBibl>
+               <bibl>
+                  参考文献:
+                  1.陈琳、袁志刚:《中国代际收入流动性的趋势与内在传递机制》[J],《世界经济》2012年第6期.
+                  2.郭丛斌、闵维方:《教育:创设合理的代际流动机制——结构方程模型在教育与代际流动关系研究中的应用》[J],《教育研究》2009年第10期.
+                  3.何石军、黄桂田:《中国社会的代际收入流动性趋势:2000~2009》[J],《金融研究》2013年第2期.
+                  4.杨娟、赖德胜、邱牧远:《如何通过教育缓解收入不平等?》[J],《经济研究》2015年第9期.
+                  5.Baker M., Solon G., 2003, “Earnings Dynamics and Inequality among Canadian Men, 1976-1992: Evidence from Longitudinal Income Tax Records”[J], Journal of Labor Economics, Vol.2, No.2: 289-321.
+                  6.Becker G.S., Tomes N., 1979, “An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility”[J], Journal of Political Economy, Vol.87, No.6: 1153-1189.
+                  7.Bertrand M., Kamenica E., Pan J., 2015, “Gender Identity and Relative Income within Households”[J], The Quarterly Journal of Economics, Vol.130, No.2: 571.
+                  8.Bursztyn L., Jensen R., 2015, “How Does Peer Pressure Affect Educational Investments?”[J], Quarterly Journal of Economics, Vol.130, No.3: 1329-1367.
+                  9.Chetty R., Grusky D., Hell M., Hendren N., Manduca R., Narang J., 2017, “The Fading American Dream: Trends in Absolute Income Mobility Since 1940”[J], Science, Vol.356, Iss.6336: 398-406.
+                  10.Chetty R., Hendren N., Katz L.F., 2016, “The Effects of Exposure to Better Neighborhoods on Children: New Evidence from the Moving to Opportunity Experiment”[J], American Economic Review, Vol.106, No.4: 855-902.
+                  11.Chetty R., Hendren N., Kline P., Saez E., Turner N., 2014a, “Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility”[J], American Economic Review, Vol.105: 141-147.
+                  12.Chetty R., Hendren N., Kline P., Saez E., 2014b, “Where Is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States”[J], Quarterly Journal of Economics, Vol.129, No.4: 1553-1623.
+                  13.Chiappori P., Iyigun M., Weiss Y., 2009, “Investment in Schooling and the Marriage Market”[J], The American Economic Review, Vol.99, No.5: 1689-1713.
+                  14.Eika L., Mogstad M., Zafar B., 2014, “Educational Assortative Mating and Household Income Inequality” [D], National Bureau of Economic Research, Inc, NBER Working Papers.
+                  15.Ermisch J., Francesconi M., Siedler T., 2006, “Intergenerational Mobility and Marital Sorting”[J], Economic Journal, Vol.116, No.513: 659-679.
+                  16.Genest C., Remillard B., Beaudoin D., 2009, “Goodness-of-Fit Tests for Copulas: A Review and a Power Study”[J], Insurance: Mathematics and Economics, Vol.44, No.2: 199-213.
+                  17.Haider S., Solon G., 2006, “Life-Cycle Variation in the Association between Current and Lifetime Earnings”[J], American Economic Review, Vol.96, No.4: 1308-1320.
+                  18.Handy, C., 2014, “Assortative Mating and Intergenerational Persistence of Schooling and Earnings” [D], MPRA Paper, No.63829.
+                  19.Holmlund, H., 2008, “Intergenerational Mobility and Assortative Mating Effects of an Educational Reform” [D], Cee Discussion Paper, No.50.
+                  20.Ichino A., Karabarbounis L., Moretti E., 2011, “The Political Economy of Intergenerational Income Mobility”[J], Economic Inquiry, Vol.49, No.1: 47-69.
+                  21.Mazumder, B., 2005, “Fortunate Sons: New Estimates of Intergenerational Mobility in the United States Using Social Security Earnings Data”[J], Review of Economics and Statistics, Vol.87, No.2: 235-255.
+                  22.Neal D.A., Johnson W.R., 1996, “The Role of Premarket Factors in Black-White Wage Differences”[J], Journal of Political Economy, Vol.104, No.5: 869-895.
+                  23.Solon, G., 1992, “Intergenerational Income Mobility in the United States”[J], American Economic Review, Vol.82, No.3: 393-408.
+                  24.Solon, G., 1999, “Intergenerational Mobility in the Labor Market” [A], in Ashenfelter &amp; Card, eds., Handbook of Labor Economics, Elsevier, Vol.3A: 1761-1800.
+               </bibl>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+</TEI>
