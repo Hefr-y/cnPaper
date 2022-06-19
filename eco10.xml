@@ -36,7 +36,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher>北京大学图书馆</publisher>
-            <date>2022-03-03</date>
+            <date>2021-06-18</date>
             <idno type="doi" xml:base="https://doi.org/">10.12088/PKU.jjkx.2021.03.03</idno>
             <idno type="北大经济科学期刊" xml:base="http://ccj.pku.edu.cn/jjkx/CN/article/showTenYearOldVolumn.do">2021, 43 (3): 31-43.</idno>
          </publicationStmt>
@@ -53,9 +53,9 @@
          </abstract>
          <textClass>
             <keywords>
-               <term></term>
-               <term></term>
-               <term></term>
+               <term>出口产品质量</term>
+               <term>资源配置效率</term>
+               <term>生产率离散度</term>
             </keywords>
             <classCode scheme="http://www.ztflh.com/">中图分类号：F752.62</classCode>
             <classCode scheme="https://www.aeaweb.org/econlit/jelCodes.php">JEL分类号：D24; D61; F10</classCode>
